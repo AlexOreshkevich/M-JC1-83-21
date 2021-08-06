@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class TestMyClass {
 
     @Test
-    void TestClass() {
+    void firstTestClass() {
         MyClass classUnderTest = new MyClass();
         assertNotNull(classUnderTest.getGreeting(), "MyClass should have a greeting");
     }
