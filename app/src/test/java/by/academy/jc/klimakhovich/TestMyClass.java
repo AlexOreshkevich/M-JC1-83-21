@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class TestMyClass {
 
     @Test
-    void GreetingTest () {
+    void GreetingTest() {
         MyClass classUnderTest = new MyClass();
-        assertNotNull(classUnderTest.get_Greeting(), "app should have a greeting");
+        assertNotNull(classUnderTest.Greeting(), "MyClass should have a greeting");
     }
 
 }
