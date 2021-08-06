@@ -1,13 +1,13 @@
 package by.academy.jc.klimakhovich;
 
-import by.academy.jc.App;
 
 public class MyClass {
 
     public static void main(String[] args) {
-        System.out.println(new MyClass().get_Greeting());
+        System.out.println(new MyClass().Greeting());
     }
-    public String get_Greeting() {
+
+    public String Greeting() {
         return "Hello World!";
     }
 }
