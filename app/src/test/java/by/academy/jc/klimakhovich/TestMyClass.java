@@ -10,7 +10,7 @@ public class TestMyClass {
     @Test
     void firstTestClass() {
         MyClass classUnderTest = new MyClass();
-        assertNotNull(classUnderTest.getGreeting(), "MyClass should have a greeting");
+        assertNotNull(classUnderTest.get_Greeting(), "MyClass should have a greeting");
     }
 
 }
