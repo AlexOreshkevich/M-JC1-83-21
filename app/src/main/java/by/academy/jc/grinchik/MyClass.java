@@ -5,10 +5,8 @@ public class MyClass {
         String message = "something";
         String version = "1.2.3.4";
         System.out.println(message);
-        if (args.length > 0) {
-            if (args[0].equals("--version")){
-                System.out.println(version);
-            }
+        if ((args.length > 0) && (args[0].equals("--version"))) {
+            System.out.println(version);
         }
     }
 }
