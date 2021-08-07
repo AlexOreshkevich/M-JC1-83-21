@@ -10,9 +10,9 @@ public class MyClass {
         System.out.println(message); // Sending message to the terminal
 
 
-        for (int i = 1; i < args.length; i++) {
-            System.out.println(args[i]);
-        } // To see the result you have to use "javac command" and terminal
+        for (int i=0; i<args.length; i++) {
+            System.out.println(args[i]); // To see the result you have to use "javac command" and terminal
+        }
     }
-    }
+}
 
