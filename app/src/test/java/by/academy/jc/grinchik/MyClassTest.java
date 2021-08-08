@@ -28,5 +28,6 @@ class MyClassTest {
     void classMainWorks() {
         String[] args = {};
         MyClass.main(args);
+        assert(true);
     }
 }
