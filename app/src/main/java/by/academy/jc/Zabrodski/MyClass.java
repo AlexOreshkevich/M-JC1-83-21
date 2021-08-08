@@ -6,9 +6,9 @@ public class MyClass {
 
       String message = "something";         // assign a value to the variable "something"
 
-      final String TEXT = message;          // initializing a constant variable and
+      //final String TEXT = message;          // initializing a constant variable and
 
-      System.out.println(TEXT);             // message output "something"
+      //System.out.println(TEXT);             // message output "something"
 
       String[] arg = {"Привет", "Java"};    // array data
 
