@@ -2,16 +2,14 @@ package by.academy.jc.Zabrodski;
 
 public class MyClass {
     public static void main(String[] args) {
-      System.out.println("Hello, world!");     // message output "Hello, world!"
+      System.out.println("Hello, world!");    // message output "Hello, world!"
 
-      String message = "something";            // assign a value to the variable "something"
+      final String message = "something";     // assign the value "something"to a constant
 
-      final String constOfMessage = message;
+      System.out.println(message);            // output "something"
 
-      System.out.println(constOfMessage);      // output "something"
+      String[] arg = {"Привет", "Java"};      // array data
 
-      String[] arg = {"Привет", "Java"};       // array data
-
-      System.out.println(arg[0]);              // output the first element of the array
+      System.out.println(arg[0]);             // output the first element of the array
     }
 }
