@@ -14,3 +14,7 @@ Contains all home tasks of all students of M-JC1-83-21 IT Academy group.
 ## How to build the project
 
 `./gradlew build`
+
+## Guides
+
+- [How to configure Google Code Style for ItelliJ IDEA](https://docs.google.com/document/d/14y-f9tubrT5f6m9QLLkfgs-qy4NhCmBDY1VC1vaxSGc/edit?usp=sharing)
