@@ -1,17 +1,20 @@
 codecov:
-  require_ci_to_pass: yes
+  branch: master
+  strict_yaml_branch: master
+  require_ci_to_pass: true
+  max_report_age: off
 
 coverage:
   precision: 2
   round: down
-  range: "80...100"
+  range: "33...80"
 
   status:
     project: yes
       default:
         # basic
-        target: auto
-        threshold: null
+        target: 80%
+        threshold: 1%
         base: auto
         flags: null
         paths: null
@@ -19,8 +22,8 @@ coverage:
         branches: null
         if_not_found: success
         if_ci_failed: error
-        informational: False
-        only_pulls: false
+        informational: true
+        only_pulls: true
     patch: yes
     changes: no
 
