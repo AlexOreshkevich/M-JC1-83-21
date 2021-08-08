@@ -18,3 +18,4 @@ Contains all home tasks of all students of M-JC1-83-21 IT Academy group.
 ## Guides
 
 - [How to configure Google Code Style for ItelliJ IDEA](https://docs.google.com/document/d/14y-f9tubrT5f6m9QLLkfgs-qy4NhCmBDY1VC1vaxSGc/edit?usp=sharing)
+- [How to import the project using IntelliJ IDEA and your Github account](https://docs.google.com/document/d/1yAE6bx4o6L4aeiEqKzrJSmG3a0AYllDeVIoQNsEhtrw/edit)
