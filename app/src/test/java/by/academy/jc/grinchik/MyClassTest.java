@@ -24,4 +24,9 @@ class MyClassTest {
         String[] args = {"--desk"};
         assertEquals("", classUnderTest.getString(args));
     }
+    @Test
+    void classMainWorks() {
+        String[] args = {};
+        MyClass.main(args);
+    }
 }
