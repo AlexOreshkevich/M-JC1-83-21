@@ -4,12 +4,11 @@ public class MyClass {
     public static void main(String[] args) {
       System.out.println("Hello, world!");    // message output "Hello, world!"
 
-      final String message = "something";     // assign the value "something"to a constant
+      String message = "something";
 
       System.out.println(message);            // output "something"
 
-      String[] arg = {"Привет", "Java"};      // array data
-
-      System.out.println(arg[0]);             // output the first element of the array
+      for (int i=0;i<args.length;++i)
+        System.out.println(args[i]);          // output of array elements
     }
 }
