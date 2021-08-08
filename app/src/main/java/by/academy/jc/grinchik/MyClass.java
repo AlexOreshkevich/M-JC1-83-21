@@ -1,10 +1,12 @@
 package by.academy.jc.grinchik;
 
 public class MyClass {
+    public static String version() {
+        return "App version 1.2.3.4";
+    }
     public String getString(String[] args) {
-        String version = "App version 1.2.3.4";
         if ((args.length > 0) && (args[0].equals("--version"))) {
-            return version;
+            return MyClass.version();
         } else {
             return "";
         }
