@@ -6,7 +6,7 @@ public class MyClass {
   public static void main(String[] args) {
 
     // Basic example
-    System.out.println("Hello, world!");
+    System.out.println(new MyClass().getHW());
 
     // Defining new variable "message"
     String message = "Second example";
@@ -19,5 +19,6 @@ public class MyClass {
       System.out.println(arg);
     }
   }
-}
+  public String getHW() {return "Hello World!";}
+  }
 
