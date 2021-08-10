@@ -5,6 +5,9 @@ public class MyClass {
         String message="Smile and be happy ;)";
         System.out.println("Hello, world!");
         System.out.println(message);
-
+        System.out.println(new MyClass().getMessage());
+    }
+    public String getMessage(){
+        return "Hi for everyone!";
     }
 }
