@@ -16,7 +16,10 @@ public class DirtyTest {
     public void testSum() {
         System.out.println("@Test sum(): " + sum + " = " + testSum);
         assertEquals(sum, testSum);
+    }
+    @Test
+        public void testSub() {
         System.out.println("@Test sub(): " + sub + " = " + testSub);
         assertEquals(sub, testSub);
+        }
     }
-}
