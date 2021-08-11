@@ -7,9 +7,10 @@ public class Main {
 
         int a = 10;
         int b = 5;
-        double c = 5.5;
+        double c = 6.5;
+        double d = 3.5;
 
         System.out.println(calculator.sum(a,b));
-        System.out.println(calculator.sub(a,c));
+        System.out.println(calculator.sub(c,d));
          }
 }

@@ -16,6 +16,6 @@ public class DirtyTest {
     @Test
     public void testSub() {
         Dirty calculator = new Dirty();
-        assertEquals(4.5,  calculator.sub(10,5.5)," is equal sub ");
+        assertEquals(3.0,  calculator.sub(6.5,3.5)," is equal sub ");
     }
 }
