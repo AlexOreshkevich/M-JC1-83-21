@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class MyClassTest {
 
-  @Test
-  void should_HaveTheMessage_WhenCompile() {
-    MyClass classUnderTest = new MyClass();
-    assertNotNull(classUnderTest.getMessage(), "app should have a message");
-  }
+    @Test
+    void shouldHaveTheMessageWhenCompile() {
+        MyClass classUnderTest = new MyClass();
+        assertEquals("Hi for everyone!", classUnderTest.getMessage());
+    }
 }
