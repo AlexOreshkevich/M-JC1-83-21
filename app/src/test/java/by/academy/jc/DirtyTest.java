@@ -1,12 +1,12 @@
 package by.academy.jc;
 
-import by.academy.jc.shorokhov.DirtyCalculator;
+import by.academy.jc.shorokhov.Dirtycalculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DirtyTest {
-    DirtyCalculator calculator = new DirtyCalculator();
+    Dirtycalculator calculator = new Dirtycalculator();
     double sum = calculator.sum(1.5,4);
     double testSum = 5.5;
     double sub = calculator.sub(2.5,3);
