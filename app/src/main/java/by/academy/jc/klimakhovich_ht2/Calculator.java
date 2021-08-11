@@ -11,6 +11,6 @@ public class Calculator {
 
     public static void main(String[] args) {
         System.out.println(new Calculator().sum(5, 5.5));
-        System.out.println(new Calculator().multi(5.5, 6));
+        System.out.println(new Calculator().multi(5.4, 6));
     }
 }
