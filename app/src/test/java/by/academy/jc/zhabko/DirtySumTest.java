@@ -21,7 +21,7 @@ public class DirtySumTest {
         //byte unit test
         assertEquals(DirtySumObTest.sum(5,2),17);
         //Division test
-        assertEquals(DirtySumObTest.sum(9.3,3.2),2.90625);
+        assertEquals(DirtySumObTest.division(9.3,3.2),2.90625);
     }
 
 }
