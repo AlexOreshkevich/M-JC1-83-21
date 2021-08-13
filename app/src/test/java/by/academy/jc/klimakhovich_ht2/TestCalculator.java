@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class TestCalculator {
-    private final Calculator calculator = new Calculator();
+
     @Test
     void dirtySum() {
         DirtyCalculator classUnderTest = new DirtyCalculator();
