@@ -16,4 +16,10 @@ public class TestCalculator {
         assertEquals(21.5, classUnderTest.sum2(3.5, 4), "sum2 should have 21.5");
         assertEquals(11, classUnderTest.sum(), "sum should have 11");
     }
+    @Test
+    void goodSum(){
+        Calculator classUnderTest = new Calculator();
+        assertEquals(5, classUnderTest.getSum(2,3), "getSum should have 5");
+        assertEquals(6, classUnderTest.getMultiple(2,3), "getMultiple should have 6");
+    }
 }
