@@ -29,6 +29,11 @@ public class DirtySumTest {
         assertEquals(17,DirtySumObTest.sum(x5,x6), "must return 17");
         //Division test
         assertEquals(2.90625,DirtySumObTest.division(9.3,3.2), "must return 2.90625");
+
+
+        //Test of "sum" method in Calculator class
+        Calculator calcTest = new Calculator();
+        assertEquals(19, calcTest.sum(7,12), "must return 19");
     }
 
 }
