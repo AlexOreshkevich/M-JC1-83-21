@@ -7,6 +7,7 @@ package by.academy.jc.zhabko;
 public class DirtySumTest {
     @Test
     void sumadndivTest() {
+
         DirtySum DirtySumObTest = new DirtySum();
         //Int unit test
         assertEquals(103,DirtySumObTest.sum(7,12), "must return 103");
