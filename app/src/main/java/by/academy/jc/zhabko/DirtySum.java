@@ -1,6 +1,6 @@
 package by.academy.jc.zhabko;
 
-public class DirtySum {
+public class DirtySum extends Calculator {
 
     //Basic hometask
     public int sum(int a, int b) {
