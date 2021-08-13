@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestCalculator {
     @Test
-    void testCalc() {
+    void DirtySum() {
         Calculator classUnderTest = new Calculator();
-        assertEquals(11.7, classUnderTest.sum(5, 6.7), "sum should have 11.7");
-        assertEquals(14, classUnderTest.multi(3.5, 4), "multiplication should have 14");
+        assertEquals(45.2, classUnderTest.sum1(5, 6.7), "sum1 should have 45.2");
+        assertEquals(21.5, classUnderTest.sum2(3.5, 4), "sum2 should have 21.5");
     }
 }
