@@ -10,8 +10,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CalculatorTest {
 
     @Test
-    void testsum() {
+    void shouldReturnTestSum() {
 
-        assertEquals(17, Calculator.sum(2, 5), "the result should be 17");
+        assertEquals(17, CalculatorUtils.sum(2, 5), "the result should be 17");
+        assertEquals(21631, CalculatorUtils.sum(25, 831), "the result should be 21631");
+    }
+
+    @Test
+    void shouldReturnTestDivision() {
+
+        assertEquals(1.632, CalculatorUtils.division(5.1, 2.4), "the result should be 1.632");
+        assertEquals(19.8471, CalculatorUtils.division(27.3, 72.7), "the result should be 19.8471");
+    }
+
+    @Test
+    void shouldReturnTestIncrement() {
+
+        assertEquals(4, CalculatorUtils.increment(5, 11.5), "the result should be 4");
+        assertEquals(4, CalculatorUtils.increment(11, 21.5), "the result should be 4");
     }
 }
