@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class DirtySupomenTest {
-
   DirtySumopen sum = new DirtySumopen();
 
   @Test
@@ -27,6 +26,5 @@ public class DirtySupomenTest {
   public void shouldReturnDirtySumFloat() {
     assertEquals(24.9F, sum.result(2.5F, 6.4F));
   }
-
 }
 
