@@ -24,4 +24,5 @@ public class DirtySumopen {
 
     return a + b + a * b;
   }
+
 }
