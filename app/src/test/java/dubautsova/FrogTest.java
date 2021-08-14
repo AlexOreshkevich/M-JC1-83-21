@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FrogTest {
     @Test
-    public void testSolution() {
+    public void shouldReturnMinNumberOfJumpsForReachingTheTarget() {
         assertEquals(1, Frog.solution(2, 30, 60));
         assertEquals(0, Frog.solution(70, 38, 4));
         assertEquals(370667, Frog.solution(988880000, 1000000000, 30));
