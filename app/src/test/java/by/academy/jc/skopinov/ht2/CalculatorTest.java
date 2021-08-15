@@ -1,9 +1,7 @@
 package by.academy.jc.skopinov.ht2;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.sun.nio.sctp.HandlerResult;
-import javax.xml.transform.Result;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
