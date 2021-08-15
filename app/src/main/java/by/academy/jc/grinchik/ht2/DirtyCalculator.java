@@ -10,4 +10,10 @@ public class DirtyCalculator extends Calculator {
      public double getSum(double a, double b) {
          return (a + b) + a * b;
      }
+     // Generic method add
+     public <T extends Number> double getSumGeneric(T a, T b) {
+         double x = a.doubleValue();
+         double y = b.doubleValue();
+         return (x + y) + x * y;
+     }
 }

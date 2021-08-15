@@ -26,4 +26,14 @@ class DirtyCalculatorTest {
         DirtyCalculator classUnderTest = new DirtyCalculator();
         assertEquals(2.75, classUnderTest.getSum(1.5, 0.5));
     }
+    @Test
+    void shouldReturnValidResultWhenSumDoublesGenerics() {
+        DirtyCalculator classUnderTest = new DirtyCalculator();
+        assertEquals(2.75, classUnderTest.getSumGeneric(1.5, 0.5));
+    }
+    @Test
+    void shouldReturnValidResultWhenSumIntsGenerics() {
+        DirtyCalculator classUnderTest = new DirtyCalculator();
+        assertEquals(29, classUnderTest.getSumGeneric(9, 2));
+    }
 }
