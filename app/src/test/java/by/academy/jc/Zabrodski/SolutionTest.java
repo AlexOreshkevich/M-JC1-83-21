@@ -6,11 +6,17 @@ package by.academy.jc.Zabrodski;
 
 class SolutionTest {
 
-  Solution sol = new Solution();
+  Solution sol1 = new Solution();
+  Solution sol2 = new Solution();
 
   @Test
-  public void shouldReturnNumberOfJumps() {
-    assertEquals(3, sol.solution(10, 85, 30));
+  public void shouldReturnNumberOfJumps1() {
+    assertEquals(3, sol1.solution1(10, 85, 30));
+  }
+
+  @Test
+  public void shouldReturnNumberOfJumps2() {
+    assertEquals(22222221, sol2.solution2(65, 1000000000, 45));
   }
 
 }
