@@ -1,7 +1,6 @@
 package by.academy.jc.Zabrodski.ht2;
 
 public class DirtySumopen {
-
     /**
     * @return - returns the sum of the values of the sum of numbers and the multiplication of numbers
     */
@@ -20,5 +19,4 @@ public class DirtySumopen {
     public float result(float a, float b) {
       return a + b + a * b;
     }
-
 }
