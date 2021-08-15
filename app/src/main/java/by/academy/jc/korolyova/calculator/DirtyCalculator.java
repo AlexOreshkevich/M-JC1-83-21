@@ -1,4 +1,4 @@
-package calculator;
+package by.academy.jc.korolyova.calculator;
 
 public class DirtyCalculator extends Calculator1 {
     public int sum1(int a, int b) {

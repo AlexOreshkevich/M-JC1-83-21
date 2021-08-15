@@ -1,4 +1,4 @@
-package calculator;
+package by.academy.jc.korolyova.calculator;
 
 public class Main {
     public static void main(String[] args) {

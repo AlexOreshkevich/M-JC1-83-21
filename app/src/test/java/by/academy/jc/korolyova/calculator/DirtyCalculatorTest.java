@@ -1,4 +1,4 @@
-package calculator;
+package by.academy.jc.korolyova.calculator;
 
 import org.junit.jupiter.api.Test;
 
