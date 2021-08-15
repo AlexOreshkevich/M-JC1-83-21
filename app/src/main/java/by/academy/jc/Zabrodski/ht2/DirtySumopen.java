@@ -19,4 +19,5 @@ public class DirtySumopen {
     public float result(float a, float b) {
       return a + b + a * b;
     }
+
 }
