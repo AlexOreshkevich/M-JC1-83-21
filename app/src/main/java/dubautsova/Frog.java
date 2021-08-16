@@ -9,7 +9,7 @@ public class Frog {
         if ((x < y) && (x >= 1) && (x <= 1000000000) && (y <= 1000000000) && (d >= 1) && (d <= 1000000000)) {
            int i;
            for (i = 0; x < y; i++) {
-               x = x + d;
+               x += d;
            }
            return i;
         } else {
