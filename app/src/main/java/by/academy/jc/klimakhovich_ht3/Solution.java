@@ -4,7 +4,7 @@ public class Solution {
     public int solution1(int x, int y, int d) {
         int step = 0;
         while (x < y) {
-            x = x + d;
+            x += d;
             step++;
         }
         return step;
@@ -12,7 +12,7 @@ public class Solution {
 
     public int solution2(int x, int y, int d) {
         int step = 0;
-        for (x = 10; x <= y; x += d){
+        for (int i = x; i <= y; i += d) {
             step++;
         }
         return step;
