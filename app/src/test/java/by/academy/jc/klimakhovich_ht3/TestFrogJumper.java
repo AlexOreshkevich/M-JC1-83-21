@@ -6,12 +6,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestFrogJumper {
     FrogJumper jump1 = new FrogJumper();
+    FrogJumper jump2 = new FrogJumper();
 
     @Test
     public void numOfJumps() {
         assertEquals(3, jump1.frog1(10, 85, 30), "should return 3 jumps");
     }
-    FrogJumper jump2 = new FrogJumper();
+
     @Test
     public void numOfMillionJumps() {
         assertEquals(65555556, jump2.frog2(33333334, 2000000000, 30), "should return 65555556 jumps");
