@@ -3,8 +3,9 @@ package by.academy.jc.klimakhovich_ht3;
 public class Solution {
     public int solution1(int x, int y, int d) {
         int step = 0;
-        while (x < y) {
-            x += d;
+        int i = x;
+        while (i < y) {
+            i += d;
             step++;
         }
         return step;
