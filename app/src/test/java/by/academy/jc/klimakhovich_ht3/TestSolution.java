@@ -10,6 +10,6 @@ public class TestSolution {
     @Test
     public void numOfJumps() {
         assertEquals(3, jump.solution1(10, 85, 30), "should return 3 jumps");
-        assertEquals(65555556, jump.solution2(33333334, 2000000000, 30), "should return 33333334 jumps");
+        assertEquals(65555556, jump.solution2(33333334, 2000000000, 30), "should return 65555556 jumps");
     }
 }
