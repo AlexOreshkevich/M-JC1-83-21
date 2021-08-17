@@ -5,9 +5,10 @@ public class Solution {
 //Basic solution. Uses while loop
     public int solution (int x,int y,int d) {
     int steps = 0;
-    while (x < y) {
+    int currentPosition = x;
+    while (currentPosition < y) {
         steps++;
-        x += d;
+        currentPosition += d;
     }
     return steps;
     }
