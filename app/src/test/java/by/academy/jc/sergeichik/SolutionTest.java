@@ -10,24 +10,39 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SolutionTest {
     Solution jumps = new Solution();
     @Test
-    void shouldReturnSolutionTest() {
-
+    void shouldReturnSolutionTest_0() {
         assertEquals(3, jumps.solution(10, 85, 30), "The small frog will jumps 3 times");
+    }
+    @Test
+    void shouldReturnSolutionTest_1() {
         assertEquals(2, jumps.solution(0, 1000000000, 999999999), "The small frog will jumps 2 times");
+    }
+    @Test
+    void shouldReturnSolutionTest_2() {
         assertEquals(1000000, jumps.solution(1000, 1000000000, 1000), "The small frog will jumps 1000000 times");
     }
     @Test
-    void shouldReturnSolution1Test() {
-
+    void shouldReturnSolution1Test_0() {
         assertEquals(11363609, jumps.solution1(2456, 1000000000, 88), "The small frog will jumps 11363609 times");
+    }
+    @Test
+    void shouldReturnSolution1Test_1() {
         assertEquals(8, jumps.solution1(1, 8, 1), "The small frog will jumps 8 times");
+    }
+    @Test
+    void shouldReturnSolution1Test_2() {
         assertEquals(126, jumps.solution1(976465394, 1000000000, 187667), "The small frog will jumps 126 times");
     }
     @Test
-    void shouldReturnSolution2Test() {
-
+    void shouldReturnSolution2Test_0() {
         assertEquals(2000000001, jumps.solution2(-1000000000, 1000000000, 1), "The small frog will jumps 2000000001 times");
+    }
+    @Test
+    void shouldReturnSolution2Test_1() {
         assertEquals(333333333, jumps.solution2(1, 999999999, 3), "The small frog will jumps 333333333 times");
+    }
+    @Test
+    void shouldReturnSolution2Test_2() {
         assertEquals(805222, jumps.solution2(8, 765765454, 951), "The small frog will jumps 805222 times");
     }
 }
