@@ -11,6 +11,7 @@ public class SolutionTest {
     public void shouldReturnNumberOfJumps1() {
         assertEquals(3, sol1.solution(10,85,30));
         assertEquals(22222221,sol1.solution(65,1000000000,45));
+        assertEquals(3,sol1.solution(10,100,30));
     }
 
     @Test
