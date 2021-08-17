@@ -11,7 +11,7 @@ public class Frog {
 
 
     }
-    public int solution1(int x, int y, int d) {
+    public int solutionHuge(int x, int y, int d) {
         int jump = 0;
         for ( jump = 0; x <= y; jump++ ) {
             x += d;
