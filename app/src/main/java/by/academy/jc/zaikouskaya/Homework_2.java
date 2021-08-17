@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Integer.sum;
 
-public class Homework2 {
+public class Homework_2 {
 
     public static void main(String[] args) {
 
@@ -16,11 +16,13 @@ public class Homework2 {
         System.out.print("Input the second integer: ");
         int b = in.nextInt();
 
-        //sum of numbers
-        int sum = a + b;
+        //actions with numbers
+        public int result = result(a, b) {
+            result = a + b + a * b;
+        }
 
-        //output the sum
-        System.out.println("Sum of numbers " + a + " and " + b + " is " + sum);
+        //output the result
+        System.out.println("Your numbers are " + a + " and " + b + ". \nThe result is " + result + ".");
 
     }
 
