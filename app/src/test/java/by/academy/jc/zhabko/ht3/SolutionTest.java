@@ -18,5 +18,6 @@ public class SolutionTest {
     public void shouldReturnNumberOfJumps2() {
         assertEquals(3, sol2.solutionSmart(10,85,30));
         assertEquals(22222221,sol2.solutionSmart(65,1000000000,45));
+        assertEquals(3,sol2.solutionSmart(10,100,30));
     }
 }
