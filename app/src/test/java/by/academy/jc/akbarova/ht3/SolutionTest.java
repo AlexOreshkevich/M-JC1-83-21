@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionTest {
     @Test
     public void shouldReturnNumbersOfJumps1() {
-
         assertEquals(3, Solution.solution(10, 85, 30));
     }
 
