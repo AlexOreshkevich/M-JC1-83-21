@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class SolutionTest {
 
-  // random parameter values test
+  // random parameter values displayMatches
   @Test
   void test1() throws IllegalArgumentException {
     Solution test = new Solution();
