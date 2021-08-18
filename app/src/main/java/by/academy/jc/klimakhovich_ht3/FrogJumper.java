@@ -1,25 +1,8 @@
 package by.academy.jc.klimakhovich_ht3;
 
 public class FrogJumper {
-    public int frog1(int x, int y, int d) {
-        int step = 0;
-        int i = x;
-        while (i < y) {
-            i += d;
-            step++;
-        }
-        return step;
-    }
 
-    public int frog2(int x, int y, int d) {
-        int step = 0;
-        for (int i = x; i <= y; i += d) {
-            step++;
-        }
-        return step;
-    }
-
-    public double frog3(int x, int y, int d) {
+    public double frog(int x, int y, int d) {
         double step = 0;
         double path;
         path = (y - x) / d;
@@ -30,6 +13,6 @@ public class FrogJumper {
         return step;
     }
     public static void main(String[] args){
-        System.out.println(new FrogJumper().frog3(10,85,30));
+        System.out.println(new FrogJumper().frog(10,85,30));
     }
 }
