@@ -24,11 +24,6 @@ public class TestFrogJumper {
     }
 
     @Test
-    public void nullYJumps1() {
-        assertEquals(0, jump.frog1(1, 0, 1), "should return 0 jumps");
-    }
-
-    @Test
     public void nullYJumps2() {
         assertEquals(0, jump.frog2(1, 0, 1), "should return 0 jumps");
     }
@@ -36,11 +31,6 @@ public class TestFrogJumper {
     @Test
     public void nullYJumps3() {
         assertEquals(0, jump.frog3(1, 0, 1), "should return 0 jumps");
-    }
-
-    @Test
-    public void nullXJumps1() {
-        assertEquals(2, jump.frog1(0, 1, 1), "should return 2 jumps");
     }
 
     @Test
