@@ -19,15 +19,15 @@ class SolutionTest {
     }
     @Test
     void shouldReturnSolutionTest_2() {
-        assertEquals(1000000, jumps.solution1(1000, 1000000000, 1000), "The small frog will jumps 1000000 times");
+        assertEquals(999999, jumps.solution1(1000, 1000000000, 1000), "The small frog will jumps 999999 times");
     }
     @Test
     void shouldReturnSolutionTest_3() {
-        assertEquals(0, jumps.solution1(1000000000, 986565467, 50), "The small frog will jumps 0 times");
+        assertEquals(0, jumps.solution1(1000000000, 0, 0), "The small frog will jumps 0 times");
     }
     @Test
     void shouldReturnSolutionTest_4() {
-        assertEquals(9, jumps.solution1(0, 8, 1), "The small frog will jumps 9 times");
+        assertEquals(0, jumps.solution1(6, 4, 1), "The small frog will jumps 0 times");
     }
     @Test
     void shouldReturnSolutionTest_5() {

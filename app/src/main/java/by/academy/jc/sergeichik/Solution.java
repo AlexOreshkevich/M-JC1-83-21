@@ -6,11 +6,12 @@ package by.academy.jc.sergeichik;
 public class Solution {
 
     public int solution1 (int x, int y, int d){
-        int i = 0;
-        while (x<=y){
-            x+=d;
-            i++;
-        }
-        return i;
+        int i = y-x; //distance from x to y
+        if (x>=y)
+            return 0; //in this case, no steps are required
+        if (i%d ==0)
+            return (i/d); //the frog jumps at a distance equal to y
+        else
+            return ((i/d)+1); //the frog jumps at a distance greater than y
     }
 }
