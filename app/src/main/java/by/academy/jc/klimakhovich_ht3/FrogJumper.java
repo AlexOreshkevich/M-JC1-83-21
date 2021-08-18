@@ -18,4 +18,15 @@ public class FrogJumper {
         }
         return step;
     }
+
+    public double frog3(int x, int y, int d) {
+        double step = 0;
+        double path;
+        path = (y - x) / d;
+        step = path;
+        if (path % 1 >= 0) {
+            step++;
+        }
+        return step;
+    }
 }
