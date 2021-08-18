@@ -29,4 +29,7 @@ public class FrogJumper {
         }
         return step;
     }
+    public static void main(String[] args){
+        System.out.println(new FrogJumper().frog3(10,85,30));
+    }
 }

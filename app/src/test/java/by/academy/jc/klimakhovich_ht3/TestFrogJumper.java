@@ -40,16 +40,16 @@ public class TestFrogJumper {
 
     @Test
     public void nullXJumps1() {
-        assertEquals(2, jump.frog1(0, 1, 1), "should return 0 jumps");
+        assertEquals(2, jump.frog1(0, 1, 1), "should return 2 jumps");
     }
 
     @Test
     public void nullXJumps2() {
-        assertEquals(2, jump.frog2(0, 1, 1), "should return 0 jumps");
+        assertEquals(2, jump.frog2(0, 1, 1), "should return 2 jumps");
     }
 
     @Test
     public void nullXJumps3() {
-        assertEquals(2, jump.frog3(0, 1, 1), "should return 0 jumps");
+        assertEquals(2, jump.frog3(0, 1, 1), "should return 2 jumps");
     }
 }
