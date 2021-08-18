@@ -17,11 +17,16 @@ public class TestFrogJumper {
     public void numOfMillionJumps1() {
         assertEquals(65555556, jump.frog2(33333334, 2000000000, 30), "should return 65555556 jumps");
     }
+    @Test
+    public void numOfMillionsJumps2() {
+        assertEquals(65555556, jump.frog3(33333334, 2000000000, 30), "should return 655555556 jumps");
+    }
 
     @Test
     public void numOfThousandsJumps2() {
         assertEquals(655556, jump.frog3(33333334, 2000000000, 3000), "should return 655556 jumps");
     }
+
 
     @Test
     public void nullYJumps2() {
