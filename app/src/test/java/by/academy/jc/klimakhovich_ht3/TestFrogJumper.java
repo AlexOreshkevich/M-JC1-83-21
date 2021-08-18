@@ -23,4 +23,17 @@ public class TestFrogJumper {
     public void numOfThousandsJumps2() {
         assertEquals(655556, jump3.frog3(33333334, 2000000000, 3000), "should return 655556 jumps");
     }
+    @Test
+    public void nullJumps1() {
+        assertEquals(0, jump1.frog1(1, 0, 1), "should return 0 jumps");
+    }
+    @Test
+    public void nullJumps2() {
+        assertEquals(0, jump2.frog2(1, 0, 1), "should return 0 jumps");
+    }
+    @Test
+    public void nullJumps3() {
+        assertEquals(0, jump3.frog3(1, 0, 1), "should return 0 jumps");
+    }
+
 }
