@@ -1,21 +1,18 @@
 package by.academy.jc.shorokhov.frog;
 
 public class Frog {
-    public int solution(int x, int y, int d) {
-    int jump = 0;
-    while (x <= y) {
-        x += d;
-        jump++;
-    }
-    return jump;
 
-
-    }
-    public int solutionHuge(int x, int y, int d) {
+    public int HugeSolution(int x, int y, int d) {
         int jump = 0;
-        for ( jump = 0; x <= y; jump++ ) {
-            x += d;
+        int i = x;
+        for ( i = x; i < y; i = i + d ) {
+            if (x > 1000000000 || y > 1000000000) {
+                boolean b = x <= y;
+            }
+            jump++;
         }
         return jump;
     }
 }
+
+
