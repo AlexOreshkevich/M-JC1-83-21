@@ -23,6 +23,7 @@ public class FrogJump {
                 step++;
             }
         }
+
         return step;
     }
 }
