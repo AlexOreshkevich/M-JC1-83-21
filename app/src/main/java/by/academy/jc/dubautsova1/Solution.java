@@ -2,9 +2,9 @@ package by.academy.jc.dubautsova1;
 
 public class Solution {
     public static int solution(int[] A){
-        int a, b, t, n, n1, size;
+        int a, b, t, n, size;
         size = A.length;
-        //buble sorting
+        //bubble sorting
         for (a = 1; a < size; a++)
             for (b = size - 1; b >= a; b--) {
                 if (A[b - 1] > A[b]) {
@@ -14,13 +14,13 @@ public class Solution {
                 }
             }
 
-        //algoritm for pozitive numbers
-        if (A[0] >= 0) {
+        //algoritm for pozitive numbers starting from 1
+        if (A[0] == 1) {
             for (n = 0; (n < size - 1) && (A[n] + 1 == A[n + 1]); n++) ;
             return A[n] + 1;
 
-            //algoritm for negative numbers
-        } else if (A[size - 1] <= 0) {
+            //algoritm for negative numbers and pozit. numbers > 1
+        } else if ((A[size - 1] <= 0) || (A[0] > 1)) {
             return 1;
 
             //algoritm for mixed neg and poz numbers
@@ -30,11 +30,13 @@ public class Solution {
                     break;
                 }
             }
-            if ((A[n] == A[size - 1]) || (A[n] + 1 != A[n + 1])) {
-                return A[n] + 1;
+            // if minimal pozit integer > 1
+            if (A[n] > 1) {
+                return 1;
             } else {
-                for (n1 = n; ((n1 < size - 1) && (A[n1] + 1 == A[n1 + 1])); n1++);
-                return A[n1] + 1;
+                // if minimal pozit integer = 1
+                for (A[n] = 1; ((n < size - 1) && (A[n] + 1 == A[n + 1])); n++);
+                return A[n] + 1;
             }
         }
     }

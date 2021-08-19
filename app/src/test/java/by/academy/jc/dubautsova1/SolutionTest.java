@@ -6,9 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SolutionTest {
     @Test
-    public void shouldReturnMissingInteger3() {
-        int[] A = {2, 4, 8, 1, 9};
-        assertEquals(3, Solution.solution(A));
+    public void shouldReturnMissingInteger2() {
+        int[] A = {3, 4, 8, 1, 9};
+        assertEquals(2, Solution.solution(A));
     }
     @Test
     public void shouldReturnMissingInteger1() {
@@ -16,8 +16,18 @@ public class SolutionTest {
         assertEquals(1, Solution.solution(B));
     }
     @Test
-    public void shouldReturnMissingInteger9() {
-        int[] C = {-2, -4, 8, -1};
-        assertEquals(9, Solution.solution(C));
+    public void shouldReturnMissingInteger01() {
+        int[] C = {2, 4, 8};
+        assertEquals(1, Solution.solution(C));
+    }
+    @Test
+    public void shouldReturnMissingInteger001() {
+        int[] C = {-2, 4, 8};
+        assertEquals(1, Solution.solution(C));
+    }
+    @Test
+    public void shouldReturnMissingInteger02() {
+        int[] C = {-2, 1, 4, 8};
+        assertEquals(2, Solution.solution(C));
     }
 }
