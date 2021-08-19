@@ -8,7 +8,7 @@ public class TestFrogJump {
     FrogJump jump = new FrogJump();
 
     @Test
-    public void LittleFrogJump() {
+    public void littleFrogJump() {
         assertEquals(3, jump.frog(10, 85, 30), "should return 3 jumps");
     }
 
