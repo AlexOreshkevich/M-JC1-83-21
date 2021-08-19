@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class SolutionTest {
     @Test
     public void shouldReturnMissingInteger3() {
-        int[] A = {2, 4, 8, 1};
+        int[] A = {2, 4, 8, 1, 9};
         assertEquals(3, Solution.solution(A));
     }
     @Test

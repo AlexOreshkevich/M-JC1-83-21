@@ -4,7 +4,7 @@ public class Solution {
     public static int solution(int[] A){
         int a, b, t, n, n1, size;
         size = A.length;
-        //buble-sorting
+        //buble sorting
         for (a = 1; a < size; a++)
             for (b = size - 1; b >= a; b--) {
                 if (A[b - 1] > A[b]) {
