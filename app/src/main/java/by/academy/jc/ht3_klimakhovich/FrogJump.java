@@ -6,8 +6,7 @@ public class FrogJump {
         int step = 0;
         if (d == 0) {
             System.out.println("large of jumps = 0");
-            x = 0;
-            y = 0;
+
         } else if (y == 0) {
             System.out.println("Frog don't need to jump y = 0");
         } else if ((x > y) || (d > y)) {

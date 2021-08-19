@@ -18,19 +18,24 @@ public class TestFrogJump {
     }
 
     @Test
-    public void numOfJumps() {
+    public void numOfJumps1() {
         assertEquals(0, jump.frog(33333334, 2000000000, 0), "should return 0 jumps");
     }
 
 
     @Test
     public void nullYJumps() {
-        assertEquals(0, jump.frog(1, 0, 1), "should return 0 jumps");
+        assertEquals(1, jump.frog(1, 100, 100), "should return 1 jump");
     }
 
 
     @Test
-    public void nullXJumps() {
-        assertEquals(1, jump.frog(0, 1, 1), "should return 2 jumps");
+    public void nullXCoordinate() {
+        assertEquals(10, jump.frog(0, 100, 10), "should return 10 jumps");
+    }
+
+    @Test
+    public void coordinateXBiggerThanY() {
+        assertEquals(0, jump.frog(101, 100, 10), "should return 0 jumps");
     }
 }
