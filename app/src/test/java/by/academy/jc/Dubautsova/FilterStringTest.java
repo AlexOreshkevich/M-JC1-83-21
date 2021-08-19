@@ -9,7 +9,7 @@ public class FilterStringTest {
     @Test
     public void shouldRemoveTags(){
         assertEquals("Hello, world!", FilterString.filterContent("<h1>Hello, world!</h1>"));
-        assertEquals("Hello, world!!", FilterString.filterContent("<h1><p>Hello, world!</p></h1>"));
-        assertEquals("Hello, world!!!", FilterString.filterContent("<p>Hello, world!</p>"));
+        assertEquals("Hello, world!!", FilterString.filterContent("<h1><p>Hello, world!!</p></h1>"));
+        assertEquals("Hello, world!!!", FilterString.filterContent("<p>Hello, world!!!</p>"));
     }
 }
