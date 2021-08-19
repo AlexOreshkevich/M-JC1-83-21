@@ -22,7 +22,7 @@ public class FrogTest {
 
     @Test
     public void shouldReturnMinNumberOfJumpsForReachingTheTarget00() {
-        assertEquals(0, Frog.solution(7, 1000000008, 30));
+        assertEquals(0, Frog.solution(7, 1000000002, 30));
     }
 
     @Test
