@@ -37,6 +37,8 @@ dependencies {
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:29.0-jre")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0")
 }
 
 application {
