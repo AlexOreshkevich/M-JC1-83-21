@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TagContentExtractor {
-    private static String[] techArray;
+    private final String[] techArray;
 
 
     //Constructor of the "TagContentExtractor" object
@@ -19,7 +19,7 @@ public class TagContentExtractor {
     //Extraction method
     public String[] extractTextBetweenTags() {
 
-        //Regex implementanion to search start tag(group1), end tag(no group), and content between tags(group2)
+        //Regex implementation to search start tag(group1), end tag(no group), and content between tags(group2)
         String regex = "<(.+)>([^<]+)</\\1>";
         Pattern pattern = Pattern.compile(regex);
 
