@@ -36,10 +36,10 @@ public class TagContentExtractor {
             boolean found = false;
             while (matcher.find()) {
             found = true;
-            techStringOutput += matcher.group(2)+"\n";
+            techStringOutput=techStringOutput.concat(matcher.group(2)+"\n");
             }
             if (!found) {
-            techStringOutput += "None"+"\n";
+            techStringOutput=techStringOutput.concat("None"+"\n");
             }
             testCases--;
     }
