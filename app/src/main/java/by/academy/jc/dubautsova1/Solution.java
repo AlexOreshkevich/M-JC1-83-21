@@ -16,7 +16,7 @@ public class Solution {
 
         //algoritm for pozitive numbers starting from 1
         if (A[0] == 1) {
-            for (n = 0; (n < size - 1) && (A[n] + 1 == A[n + 1]); n++) ;
+            for (n = 0; (n < size - 1) && ((A[n] + 1 == A[n + 1]) || (A[n] == A[n + 1])); n++) ;
             return A[n] + 1;
 
             //algoritm for negative numbers and pozit. numbers > 1
@@ -35,7 +35,7 @@ public class Solution {
                 return 1;
             } else {
                 // if minimal pozit integer = 1
-                for (A[n] = 1; ((n < size - 1) && (A[n] + 1 == A[n + 1])); n++);
+                for (A[n] = 1; ((n < size - 1) && ((A[n] + 1 == A[n + 1]) || (A[n] == A[n + 1]))); n++);
                 return A[n] + 1;
             }
         }
