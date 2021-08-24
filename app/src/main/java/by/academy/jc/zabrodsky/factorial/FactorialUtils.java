@@ -1,8 +1,6 @@
-package by.academy.jc.Zabrodski.Factorial_Demo;
+package by.academy.jc.zabrodsky.factorial;
 
-public class Factorial_Demo {
-
-// N! = N * (N - 1)!
+public class FactorialUtils {
 
   public static int fact(int N) {
     if (N == 0) {
@@ -11,7 +9,6 @@ public class Factorial_Demo {
     if (N == 1) {
       return 1;
     }
-
     int fact = N;
 
     for (int i = 1; i < N; i++) {
