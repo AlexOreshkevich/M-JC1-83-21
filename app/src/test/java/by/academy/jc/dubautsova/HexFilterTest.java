@@ -11,7 +11,7 @@ public class HexFilterTest {
     }
     @Test
     public void shouldDeleteHexNumbers1(){
-        assertEquals("akfgh  0b345dt gyjjj", HexFilter.withoutHexNumbers("akfgh 0XAB 0b345dt gyjjj"));
+        assertEquals("akfgh  0b345dt gyjjj", HexFilter.withoutHexNumbers("akfgh 0xab 0b345dt gyjjj"));
     }
     @Test
     public void shouldDeleteHexNumbers2(){
