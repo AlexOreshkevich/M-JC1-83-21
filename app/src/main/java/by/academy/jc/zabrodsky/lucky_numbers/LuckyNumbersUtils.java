@@ -11,7 +11,8 @@ public class LuckyNumbersUtils {
       int firstHalfOfTheNumber = n / value;
       int secondHalfOfTheNumber = n % value;
 
-      int sum1 = 0, sum2 = 0;
+      int sum1 = 0;
+      int sum2 = 0;
 
       for (int count = exp; count > 0; count--) {
         sum1 += firstHalfOfTheNumber % 10;
