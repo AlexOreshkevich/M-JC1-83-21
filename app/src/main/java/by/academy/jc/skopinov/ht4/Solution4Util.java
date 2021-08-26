@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Solution4 {
+public class Solution4Util {
   public static String extractingContent(String s) {
     if (s == null) {
       throw new IllegalArgumentException();
