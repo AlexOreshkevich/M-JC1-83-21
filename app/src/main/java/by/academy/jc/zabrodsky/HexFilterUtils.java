@@ -6,15 +6,14 @@ import java.util.regex.Pattern;
 public class HexFilterUtils {
   public static String hexFilter(String line) {
 
-    String pattern = "0[xX][\\da-fA-F]+";
+    String pattern = " 0[xX][\\da-fA-F]+";
     Pattern p = Pattern.compile(pattern);
 
     Matcher m = p.matcher(line);
     String str = line;
 
     while (m.find()) {
-      str = str.replace(m.group(), "");
-      str = str.replace("  ", " ");
+      str = str.replaceAll(m.group(), "");
     }
 
     return str;
