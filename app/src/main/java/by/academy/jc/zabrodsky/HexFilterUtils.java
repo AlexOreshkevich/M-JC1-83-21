@@ -4,6 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HexFilterUtils {
+
   public static String hexFilter(String line) {
 
     String pattern = " 0[xX][\\da-fA-F]+";
