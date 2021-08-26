@@ -27,7 +27,7 @@ public class DataInput {
       throw new IllegalArgumentException();
 
     for (int i = 0; i < n; i++) {
-      System.out.println(Solution4.extractingContent(lines.get(i)));
+      System.out.println(WorkWithTags.extractingContent(lines.get(i)));
     }
   }
 }

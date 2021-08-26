@@ -6,10 +6,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class Solution4 {
+public class WorkWithTags {
   public static String extractingContent(String s) {
-    if (s == null)
-      throw new IllegalArgumentException();
     String result;
     result = firstCheck(s);
     if(!result.equals("None")) {
@@ -61,7 +59,6 @@ public class Solution4 {
       closingTagValue = closingTagValue.replaceFirst("/", "");
 
       if (closingTagValue.equals(openingTagValue)) {
-        System.out.println(tagText.replaceAll("</?[a-zA-Z][.[^<>]]*?>", ""));
         positiveResult = tagText.replaceAll("</?[a-zA-Z][.[^<>]]*?>", "");
       }
       else positiveResult = "None";
