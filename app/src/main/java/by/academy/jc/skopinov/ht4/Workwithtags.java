@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class WorkWithTags {
+public class Workwithtags {
   public static String extractingContent(String s) {
     if (s == null) {
       throw new IllegalArgumentException();
