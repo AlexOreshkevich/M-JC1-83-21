@@ -4,8 +4,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Parser {
-
-    public static void stringTagFinder(String source) {
+    public static String none(){
+        String none = "None";
+        return none;
+    }
+    public static String stringTagFinder(String source) {
 
 
         if (source == null || source.isBlank()) {
@@ -21,17 +24,19 @@ public class Parser {
         boolean found = false;
 
 
+        String result = source;
         while (matcher.find()) {
 
-            source = matcher.group(2);
+            result = matcher.group(2);
 
             found = true;
         }
 
         if (!found) {
-            System.out.println("None");
+            System.out.println(none());
         } else if (found) {
-            System.out.println(source);
+            System.out.println(result);
         }
+        return result;
     }
 }
