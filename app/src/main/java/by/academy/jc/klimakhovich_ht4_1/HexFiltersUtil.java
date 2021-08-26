@@ -3,7 +3,7 @@ package by.academy.jc.klimakhovich_ht4_1;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class HexFilters {
+public class HexFiltersUtil {
 
     public static String filter(String source){
 
