@@ -8,6 +8,9 @@ import java.util.regex.Pattern;
 
 public class WorkWithTags {
   public static String extractingContent(String s) {
+    if (s == null) {
+      throw new IllegalArgumentException();
+    }
     String result;
     result = firstCheck(s);
     if(!result.equals("None")) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class DataInput {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IllegalArgumentException {
     ArrayList<String> lines = new ArrayList<>();
     int allLinesLength = 0;
     Scanner scanner = new Scanner(System.in);
