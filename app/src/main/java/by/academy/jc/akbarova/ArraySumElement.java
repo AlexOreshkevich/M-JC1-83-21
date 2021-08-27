@@ -5,7 +5,6 @@ public class ArraySumElement {
         int max = a[0];
         int min = a[0];
         int indexMin = 0, indexMax = 0;
-        int s = 0;
         int sum = 0;
 
         for (int i = 0; i < a.length; i++) {
@@ -22,7 +21,6 @@ public class ArraySumElement {
                 indexMax = i;
                 max = a[i];
             }
-            s += a[i];
         }
 
         System.out.println(min + " " + max);
