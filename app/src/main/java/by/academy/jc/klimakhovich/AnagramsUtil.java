@@ -34,8 +34,4 @@ public class AnagramsUtil {
 
         return c1.equals(c2);
     }
-
-    public static void main(String args[]) {
-        System.out.println(AnagramsUtil.isAnagram("cat9", "Tac9"));
-    }
 }
