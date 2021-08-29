@@ -46,4 +46,14 @@ public class AnagramsUtilTest {
     void shouldReturnFalse51SameLetters() {
         assertEquals(false, AnagramsUtil.isAnagram("ajfmvkdlsoajfmvkdlsoajfmvkdlsoajfmvkdlsoajfmvkdlsoq", "ajfmvkdlsoajfmvkdlsoajfmvkdlsoajfmvkdlsoajfmvkdlsoq"));
     }
+
+    @Test
+    void shouldReturnFalseRussianLetters() {
+        assertEquals(false, AnagramsUtil.isAnagram("Catфф", "Catфф"));
+    }
+
+    @Test
+    void shouldReturnFalseNumberInString() {
+        assertEquals(false, AnagramsUtil.isAnagram("Cat9", "Cat9"));
+    }
 }
