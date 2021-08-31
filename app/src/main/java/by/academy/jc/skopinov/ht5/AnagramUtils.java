@@ -1,7 +1,6 @@
 package by.academy.jc.skopinov.ht5;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,16 +17,11 @@ public class AnagramUtils {
 
     String aLowerCase = a.toLowerCase();
     String bLowerCase = b.toLowerCase();
-    ArrayList<Character> aArray = new ArrayList<>();
-    ArrayList<Character> bArray = new ArrayList<>();
-    for (char c : aLowerCase.toCharArray()) {
-      aArray.add(c);
-    }
-    for (char c : bLowerCase.toCharArray()) {
-      bArray.add(c);
-    }
-    Collections.sort(aArray);
-    Collections.sort(bArray);
+    char[] aArray = aLowerCase.toCharArray();
+    char[] bArray = bLowerCase.toCharArray();
+
+    Arrays.sort(aArray);
+    Arrays.sort(bArray);
 
     StringBuilder a1 = new StringBuilder();
     for (char c : aArray) {
