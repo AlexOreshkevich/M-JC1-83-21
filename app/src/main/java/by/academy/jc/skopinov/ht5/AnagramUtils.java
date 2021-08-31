@@ -1,7 +1,6 @@
 package by.academy.jc.skopinov.ht5;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
