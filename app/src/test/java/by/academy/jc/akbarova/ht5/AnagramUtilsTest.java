@@ -1,26 +1,24 @@
 package by.academy.jc.akbarova.ht5;
 
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import java.util.stream.Stream;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AnagramUtilsTest {
 
-    @Test
-    void shouldReturn_TrueOrFalse_IfTheseTwoWordsAnagram1() {
-
-        assertTrue(AnagramUtils.isAnagram("anagram", "margana"));
+    @ParameterizedTest
+    @MethodSource("stringA_and_BProvider")
+    void shouldReturnTrueWhenAandBAnagramsOrFalseWhenNotAnagramsTest (String a, String b, boolean result) {
+        assertEquals(result, by.academy.jc.akbarova.ht5.AnagramUtils.isAnagram(a,b));
     }
 
-    @Test
-    void shouldReturn_TrueOrFalse_IfTheseTwoWordsAnagram2() {
-
-        assertFalse(AnagramUtils.isAnagram("anagramm", "marganaa"));
-    }
-
-    @Test
-    void shouldReturn_TrueOrFalse_IfTheseTwoWordsAnagram3() {
-
-        assertTrue(AnagramUtils.isAnagram("Hello", "hello"));
+    private static Stream<Arguments> stringA_and_BProvider() {
+        return Stream.of(
+                Arguments.of("anagram","margana",true),
+                Arguments.of("anagramm","marganaa",false),
+                Arguments.of("Hello","hello",true)
+        );
     }
 }
