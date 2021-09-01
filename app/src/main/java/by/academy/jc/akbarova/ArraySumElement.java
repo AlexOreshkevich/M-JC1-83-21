@@ -4,7 +4,8 @@ public class ArraySumElement {
     public static int sumBetweenMaxMinElement(int[] a) {
         int max = a[0];
         int min = a[0];
-        int indexMin = 0, indexMax = 0;
+        int indexMin = 0;
+        int indexMax = 0;
         int sum = 0;
 
         for (int i = 0; i < a.length; i++) {
