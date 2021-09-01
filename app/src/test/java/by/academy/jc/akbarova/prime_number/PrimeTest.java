@@ -8,15 +8,13 @@ class PrimeTest {
 
     @Test
     void shouldReturnSecondPrimeNumber1() {
-        Prime p = new Prime();
 
-        assertEquals(59, p.isPrime(50, 70), "expected second prime number between 50 and 70 numbers");
+        assertEquals(59, Prime.isPrime(50, 70), "expected second prime number between 50 and 70 numbers");
     }
 
     @Test
     void shouldReturnSecondPrimeNumber2() {
-        Prime p = new Prime();
 
-        assertEquals(61, p.isPrime(54, 70), "expected second prime number between 54 and 70 numbers");
+        assertEquals(61, Prime.isPrime(54, 70), "expected second prime number between 54 and 70 numbers");
     }
 }
