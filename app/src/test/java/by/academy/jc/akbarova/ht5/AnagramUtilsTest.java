@@ -11,7 +11,7 @@ class AnagramUtilsTest {
     @ParameterizedTest
     @MethodSource("stringAandBProvider")
     void shouldReturnTrueWhenAandBAnagramsOrFalseWhenNotAnagramsTest (String a, String b, boolean result) {
-        assertEquals(result, by.academy.jc.akbarova.ht5.AnagramUtils.isAnagram(a,b));
+        assertEquals(result, AnagramUtils.isAnagram(a,b));
     }
 
     private static Stream<Arguments> stringAandBProvider() {
