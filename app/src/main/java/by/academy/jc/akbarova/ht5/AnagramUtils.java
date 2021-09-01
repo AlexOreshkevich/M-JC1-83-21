@@ -4,17 +4,17 @@ import java.util.Arrays;
 
 public class AnagramUtils {
     public static boolean isAnagram(String a, String b) {
-        a = a.toLowerCase();
-        b = b.toLowerCase();
+        String one = a.toLowerCase();
+        String two = b.toLowerCase();
 
-        int aLength = a.length();
-        int bLength = b.length();
+        int aLength = one.length();
+        int bLength = two.length();
 
         if (aLength != bLength) {
             return false;
         }
-        char[] aArray = a.toCharArray();
-        char[] bArray = b.toCharArray();
+        char[] aArray = one.toCharArray();
+        char[] bArray = two.toCharArray();
 
         Arrays.sort(aArray);
         Arrays.sort(bArray);

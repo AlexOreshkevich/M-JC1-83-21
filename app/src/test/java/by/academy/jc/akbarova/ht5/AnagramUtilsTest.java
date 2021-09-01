@@ -9,12 +9,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AnagramUtilsTest {
 
     @ParameterizedTest
-    @MethodSource("stringA_and_BProvider")
+    @MethodSource("stringAandBProvider")
     void shouldReturnTrueWhenAandBAnagramsOrFalseWhenNotAnagramsTest (String a, String b, boolean result) {
         assertEquals(result, by.academy.jc.akbarova.ht5.AnagramUtils.isAnagram(a,b));
     }
 
-    private static Stream<Arguments> stringA_and_BProvider() {
+    private static Stream<Arguments> stringAandBProvider() {
         return Stream.of(
                 Arguments.of("anagram","margana",true),
                 Arguments.of("anagramm","marganaa",false),
