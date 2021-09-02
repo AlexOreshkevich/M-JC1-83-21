@@ -41,3 +41,7 @@ jobs:
       - coverage-reporter/send_report:
           coverage-reports: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
           project-token: $CODACY_PROJECT_TOKEN
+
+      - run:
+          command: |
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
