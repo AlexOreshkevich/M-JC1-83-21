@@ -2,7 +2,10 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
+  coverage-reporter: codacy/coverage-reporter@13.3.0
 jobs:
   build:
     docker:
@@ -39,4 +42,11 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: gradle build
+      - run: gradle build jacocoTestCoverageVerification
+
+      - codecov/upload:
+          file: { { app/build/customJacocoReportDir/test/jacocoTestReport.xml } }
+
+      - coverage-reporter/send_report:
+          coverage-reports: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
+          project-token: $CODACY_PROJECT_TOKEN
