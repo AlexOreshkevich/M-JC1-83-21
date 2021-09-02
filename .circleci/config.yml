@@ -1,0 +1,47 @@
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
+  coverage-reporter: codacy/coverage-reporter@13.3.0
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: cimg/openjdk:11.0
+
+    working_directory: ~/repo
+
+    environment:
+      # Customize the JVM maximum heap limit
+      JVM_OPTS: -Xmx3200m
+      TERM: dumb
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "build.gradle" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: gradle dependencies
+
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: v1-dependencies-{{ checksum "build.gradle" }}
+
+      # run tests!
+      - run: gradle build jacocoTestCoverageVerification
+
+      - codecov/upload:
+          file: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
+
+      - coverage-reporter/send_report:
+          coverage-reports: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
+          project-token: $CODACY_PROJECT_TOKEN
+
+      - run:
+          command: |
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
