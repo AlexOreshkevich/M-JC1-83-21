@@ -36,7 +36,7 @@ jobs:
       - run: gradle build jacocoTestCoverageVerification
 
       - codecov/upload:
-          file: { { app/build/customJacocoReportDir/test/jacocoTestReport.xml } }
+          file: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
 
       - coverage-reporter/send_report:
           coverage-reports: 'app/build/customJacocoReportDir/test/jacocoTestReport.xml'
