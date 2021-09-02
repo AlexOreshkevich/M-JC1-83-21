@@ -10,6 +10,8 @@ public enum Planet {
   URANUS(8.686e+25, 2.5559e7),
   NEPTUNE(1.024e+26, 2.4746e7);
 
+  // universal gravitational constant  (m3 kg-1 s-2)
+  public static final double G = 6.67300E-11;
   private final double mass;   // in kilograms
   private final double radius; // in meters
 
@@ -25,9 +27,6 @@ public enum Planet {
   private double radius() {
     return radius;
   }
-
-  // universal gravitational constant  (m3 kg-1 s-2)
-  public static final double G = 6.67300E-11;
 
   double surfaceGravity() {
     return G * mass / (radius * radius);
