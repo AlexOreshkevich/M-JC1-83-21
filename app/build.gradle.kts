@@ -28,18 +28,15 @@ repositories {
     jcenter()
 }
 
+
 dependencies {
-    // Use JUnit Jupiter API for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.2")
 
     // Use JUnit Jupiter Engine for testing.
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.2")
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:29.0-jre")
-
-    //Importing TestParametrization
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0")
 }
 
 application {
