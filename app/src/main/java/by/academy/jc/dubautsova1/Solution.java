@@ -1,18 +1,21 @@
 package by.academy.jc.dubautsova1;
 
+import java.util.Arrays;
+
 public class Solution {
     public static int solution(int[] A){
-        int a, b, t, n, size;
+        int n, size;
         size = A.length;
         //bubble sorting
-        for (a = 1; a < size; a++)
-            for (b = size - 1; b >= a; b--) {
-                if (A[b - 1] > A[b]) {
-                    t = A[b - 1];
-                    A[b - 1] = A[b];
-                    A[b] = t;
-                }
-            }
+       // for (a = 1; a < size; a++)
+          //  for (b = size - 1; b >= a; b--) {
+              //  if (A[b - 1] > A[b]) {
+               //     t = A[b - 1];
+               //     A[b - 1] = A[b];
+               //     A[b] = t;
+              //  }
+           // }
+        Arrays.sort(A);
 
         //algoritm for pozitive numbers starting from 1
         if (A[0] == 1) {
