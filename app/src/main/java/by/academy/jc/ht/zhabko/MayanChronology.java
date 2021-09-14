@@ -1,9 +1,11 @@
-package by.academy.jc.zhabko;
+package by.academy.jc.ht.zhabko;
 
+
+import java.time.LocalDate;
 import java.time.chrono.AbstractChronology;
-import java.time.chrono.ChronoLocalDate;
 import java.time.chrono.Era;
 import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAccessor;
 import java.time.temporal.ValueRange;
 import java.util.List;
@@ -13,6 +15,7 @@ public class MayanChronology extends AbstractChronology {
 
 
     public static MayanChronology INSTANCE = new MayanChronology();
+
     @Override
     public String getId() {
         return "MayanId";
@@ -25,11 +28,16 @@ public class MayanChronology extends AbstractChronology {
 
     @Override
     public MayanLocalDate date(int Year, int month, int dayOfMonth) {
-        Year = Year % 20;
-        month = (month*30) % 20;
-        dayOfMonth = (dayOfMonth*30) % 20;
-        return MayanLocalDate.of(13,0,Year,month,dayOfMonth);
+        LocalDate localDate = LocalDate.of(Year,month,dayOfMonth);
+        LocalDate baseDateISO = LocalDate.of(-3114,
+                8,
+                12);
+        long daysBetween = ChronoUnit.DAYS.between(baseDateISO,localDate);
+
+        return MayanLocalDate.correlationDate().plusDays(daysBetween);
     }
+
+
 
     @Override
     public MayanLocalDate dateYearDay(int prolepticYear, int dayOfYear) {
