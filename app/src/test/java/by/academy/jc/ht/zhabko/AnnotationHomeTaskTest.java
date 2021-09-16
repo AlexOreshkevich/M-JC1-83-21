@@ -23,12 +23,10 @@ class AnnotationHomeTaskTest {
                             .getAnnotation(FamilyBudget.class);
                     String userRole = family.userRole();
                     int budgetLimit = family.budgetLimit();
-                    if (userRole.equals(role)) {
-                        if(budgetLimit >= spend){
+                    if (userRole.equals(role)&&budgetLimit >= spend) {
                             method.invoke(FamilyMember.class.newInstance(),
                                     budgetLimit, spend);
                             assertEquals(left,budgetLimit);
-                        }
                     }
                 }
             }
