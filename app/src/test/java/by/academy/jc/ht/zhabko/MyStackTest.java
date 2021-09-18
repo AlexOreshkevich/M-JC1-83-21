@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MyStackTest {
 
     @Test
-    void shouldPushAllIntegerObjects() {
+    void shouldPushAllIntegerObjects() throws Exception {
         MyStack <Integer> testObject = new MyStack<>();
         testObject.push(1);
         testObject.push(2);
@@ -18,7 +18,7 @@ public class MyStackTest {
     }
 
     @Test
-    void shouldPushAllStringObjects() {
+    void shouldPushAllStringObjects() throws Exception {
         MyStack <String> testObject = new MyStack<>();
         testObject.push("Test");
         testObject.push("Java");
@@ -40,7 +40,7 @@ public class MyStackTest {
     }
 
     @Test
-    void shouldPopAndReturnIntegerObject() {
+    void shouldPopAndReturnIntegerObject() throws Exception {
         MyStack <Integer> testObject = new MyStack<>();
         testObject.push(1);
         testObject.push(2);
@@ -52,7 +52,7 @@ public class MyStackTest {
     }
 
     @Test
-    void shouldPopAndReturnStringObject() {
+    void shouldPopAndReturnStringObject() throws Exception {
         MyStack <String> testObject = new MyStack<>();
         testObject.push("Test");
         testObject.push("Java");
@@ -79,7 +79,7 @@ public class MyStackTest {
     @Test
     void shouldThrowRuntimeExceptionOnPeekOnEmptyMyStack() {
         MyStack <Integer> testObject = new MyStack<>();
-        Exception exception = assertThrows(RuntimeException.class, testObject::peek);
+        Exception exception = assertThrows(Exception.class, testObject::peek);
         String actualMessage = exception.getMessage();
         String expectedMessage = "Current MyStack is empty";
         assertEquals(expectedMessage,actualMessage);
@@ -88,7 +88,7 @@ public class MyStackTest {
     @Test
     void shouldThrowRuntimeExceptionOnPoPOnEmptyMyStack() {
         MyStack <Integer> testObject = new MyStack<>();
-        Exception exception = assertThrows(RuntimeException.class, testObject::pop);
+        Exception exception = assertThrows(Exception.class, testObject::pop);
         String actualMessage = exception.getMessage();
         String expectedMessage = "Current MyStack is empty";
         assertEquals(expectedMessage,actualMessage);

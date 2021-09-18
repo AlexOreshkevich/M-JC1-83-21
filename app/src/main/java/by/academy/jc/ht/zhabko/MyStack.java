@@ -36,9 +36,9 @@ public class MyStack <E> {
         size++;
     }
 
-   E peek() {
+   E peek() throws Exception {
        if (first==null)
-           throw new  RuntimeException("Current MyStack is empty");
+           throw new  Exception("Current MyStack is empty");
         return first.item;
     }
 
@@ -46,9 +46,9 @@ public class MyStack <E> {
         linkFirst(e);
     }
 
-    void pop() {
+    void pop() throws Exception {
         if (first==null)
-            throw new  RuntimeException("Current MyStack is empty");
+            throw new Exception("Current MyStack is empty");
         first=first.next;
     }
 }
