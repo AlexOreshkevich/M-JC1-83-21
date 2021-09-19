@@ -10,6 +10,7 @@ public class WordCounterTest {
 
   @Test
   void shouldReturnCountWords0() {
+
     assertEquals(7, WordCounter.words("Count  fdhfh  fghdfgh the  number of words"));
   }
 
