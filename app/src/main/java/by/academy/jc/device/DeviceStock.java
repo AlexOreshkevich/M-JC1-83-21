@@ -17,7 +17,6 @@ public class DeviceStock implements Repository<Device>{
              return device;
          }
      }
-
      return null;
     }
 
