@@ -34,7 +34,7 @@ public class Solution {
             String role = in.next();
             int spend = in.nextInt();
             try {
-                Class annotatedClass = FamilyMember.class;
+                Class<FamilyMember> annotatedClass = FamilyMember.class;
                 Method[] methods = annotatedClass.getMethods();
                 for (Method method : methods) {
                     if (method.isAnnotationPresent(FamilyBudget.class)) {
