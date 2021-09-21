@@ -30,7 +30,7 @@ public class MayanLocalDate implements ChronoLocalDate {
     private final int haabDayNumber;
     private final int haabMonthNameInt;
 
-    enum tzDayNames {
+    enum TZDAYNAMES {
         Imix,
         Ik,
         Akbal,
@@ -52,14 +52,14 @@ public class MayanLocalDate implements ChronoLocalDate {
         Cauac,
         Ahau;
 
-        private static final MayanLocalDate.tzDayNames[] ENUMS = MayanLocalDate.tzDayNames.values();
-        public static MayanLocalDate.tzDayNames of (int tzDayName) {
+        private static final MayanLocalDate.TZDAYNAMES[] ENUMS = MayanLocalDate.TZDAYNAMES.values();
+        public static MayanLocalDate.TZDAYNAMES of (int tzDayName) {
             return ENUMS[tzDayName-1];
         }
 
     }
 
-    enum haabMonthNames {
+    enum HAABMONTHNAMES {
         Pop,
         Uo,
         Zip,
@@ -80,9 +80,9 @@ public class MayanLocalDate implements ChronoLocalDate {
         Kumku,
         Wayeb;
 
-        private static final MayanLocalDate.haabMonthNames[] ENUMS = MayanLocalDate.haabMonthNames.values();
+        private static final MayanLocalDate.HAABMONTHNAMES[] ENUMS = MayanLocalDate.HAABMONTHNAMES.values();
 
-        public static MayanLocalDate.haabMonthNames of (int haabMonthNamesInt) {
+        public static MayanLocalDate.HAABMONTHNAMES of (int haabMonthNamesInt) {
             return ENUMS [haabMonthNamesInt-1];
         }
 
@@ -99,6 +99,42 @@ public class MayanLocalDate implements ChronoLocalDate {
         this.tzDayNameInt = tzDayNameInt;
         this.haabDayNumber = haabDayNumber;
         this.haabMonthNameInt = haabMonthNameInt;
+    }
+
+    public int getKin() {
+        return kin;
+    }
+
+    public int getWinal() {
+        return winal;
+    }
+
+    public int getTun() {
+        return tun;
+    }
+
+    public int getKatun() {
+        return katun;
+    }
+
+    public int getBaktun() {
+        return baktun;
+    }
+
+    public int getTzDayNumber() {
+        return tzDayNumber;
+    }
+
+    public int getTzDayNameInt() {
+        return tzDayNameInt;
+    }
+
+    public int getHaabDayNumber() {
+        return haabDayNumber;
+    }
+
+    public int getHaabMonthNameInt() {
+        return haabMonthNameInt;
     }
 
     public static MayanLocalDate create (int baktun, int katun, int tun, int winal, int kin, int tzDayNumber, int tzDayNameInt, int haabDayNumber, int haabMonthNameInt) {
@@ -205,10 +241,10 @@ public class MayanLocalDate implements ChronoLocalDate {
         System.out.print(","+kin+"; ");
         System.out.print("Tzolkin Date is ");
         System.out.print(tzDayNumber);
-        System.out.print(" "+ MayanLocalDate.tzDayNames.of(tzDayNameInt)+"; ");
+        System.out.print(" "+ MayanLocalDate.TZDAYNAMES.of(tzDayNameInt)+"; ");
         System.out.print("Haab Date is ");
         System.out.print(+haabDayNumber);
-        System.out.print(" "+ MayanLocalDate.haabMonthNames.of(haabMonthNameInt));
+        System.out.print(" "+ MayanLocalDate.HAABMONTHNAMES.of(haabMonthNameInt));
         System.out.println();
     }
 
