@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
+
 
 public class MayanCalendarTest {
 
@@ -84,4 +87,53 @@ public class MayanCalendarTest {
         assertEquals(2,test.plusDays(2).getBaktun());
     }
 
+    @Test
+    void shouldReturnEnumTzilkinDaysNames() {
+        String[] arrFromTz = new String [20];
+        String[] testArray = { "Imix","Ik","Akbal","Kan","Chicchan","Cimi","Manik","Lamat","Muluc","Oc","Cheun","Eb","Ben","Ix","Men","Cib", "Caban","Etznab","Cauac","Ahau"};
+        for (int i=1; i<=20; i++) {
+            arrFromTz[i-1] = MayanLocalDate.TZDAYNAMES.of(i).toString();
+        }
+        assertArrayEquals(testArray,arrFromTz);
+    }
+
+    @Test
+    void shouldReturnEnumHaabMinthNames() {
+        String[] arrFromTz = new String [19];
+        String[] testArray = {"Pop","Uo","Zip","Zotz","Tzec","Xul","Yaxkin","Mol","Chen","Yax","Zac","Keh","Mac","Kankin","Muwan","Pax","Kayab","Kumku","Wayeb"};
+        for (int i=1; i<=19; i++) {
+            arrFromTz[i-1] = MayanLocalDate.HAABMONTHNAMES.of(i).toString();
+        }
+        assertArrayEquals(testArray,arrFromTz);
+    }
+
+    @Test
+    void shouldReturnChronology() {
+        MayanLocalDate test = MayanLocalDate.of(1,1,1,18,18,1,1,1,1);
+        assertNotNull(test.getChronology());
+    }
+
+    @Test
+    void shouldReturnLengthOfMonth() {
+        MayanLocalDate test = MayanLocalDate.of(1,1,1,18,18,1,1,1,1);
+        assertEquals(20,test.lengthOfMonth());
+    }
+
+    @Test
+    void shouldReturnUntil() {
+        MayanLocalDate test = MayanLocalDate.of(1,1,1,18,18,1,1,1,1);
+        assertEquals(0,test.until(test, ChronoUnit.DAYS));
+    }
+
+    @Test
+    void shouldReturnUntil2() {
+        MayanLocalDate test = MayanLocalDate.of(1,1,1,18,18,1,1,1,1);
+        assertNull(test.until(test));
+    }
+
+    @Test
+    void shouldReturnLong() {
+        MayanLocalDate test = MayanLocalDate.of(1,1,1,18,18,1,1,1,1);
+        assertEquals(0,test.getLong(ChronoField.ALIGNED_WEEK_OF_YEAR));
+    }
 }

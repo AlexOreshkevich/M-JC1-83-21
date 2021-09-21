@@ -160,9 +160,6 @@ public class MayanLocalDate implements ChronoLocalDate {
         return create(0,0,0,0,1,5,2,9,18);
     }
 
-    public static void correlationDateShow() {
-        correlationDate().show();
-    }
 
     public MayanLocalDate plusDays (long daysToAdd) {
         int counter = 0;
