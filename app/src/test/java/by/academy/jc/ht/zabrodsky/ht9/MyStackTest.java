@@ -37,7 +37,7 @@ public class MyStackTest {
   }
 
   @Test
-  public void returningStringObjectsUsing() {
+  public void returningStringObjectsUsing1() {
     MyStack<String> myObject;
     myObject = new MyStack<>();
     myObject.push("text1");
@@ -53,14 +53,38 @@ public class MyStackTest {
   }
 
   @Test
-  public void returningNullObjectsUsing() {
+  public void returningStringObjectsUsing2() {
+    MyStack<String> myObject;
+    myObject = new MyStack<>();
+    myObject.push("text1");
+    myObject.push("text2");
+    myObject.push("text3");
+    myObject.push("text4");
+    myObject.push("text5");
+    myObject.push("text6");
+    myObject.push("text7");
+    myObject.pop();
+    myObject.pop();
+    assertEquals(5, myObject.size());
+  }
+
+  @Test
+  public void returningNullObjectsUsing1() {
     MyStack<String> myObject;
     myObject = new MyStack<>();
     assertEquals(true, myObject.isEmpty());
+  }
+
+  @Test
+  public void returningNullObjectsUsing2() {
+    MyStack<String> myObject;
+    myObject = new MyStack<>();
+    assertTrue(myObject.isEmpty());
     myObject.push("text1");
     myObject.push("text2");
     myObject.pop();
     myObject.pop();
-    assertTrue(myObject.isEmpty());
+    assertEquals(0, myObject.size());
   }
+
 }
