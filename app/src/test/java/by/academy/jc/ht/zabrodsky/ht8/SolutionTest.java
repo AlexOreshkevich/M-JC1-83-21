@@ -38,4 +38,28 @@ class SolutionTest {
     assertEquals(1, object.solution(A, B));
   }
 
+  @Test
+  void returnsTheNumberOfLiveFish5() {
+    Solution object = new Solution();
+    int[] A = {3};
+    int[] B = {1};
+    assertEquals(1, object.solution(A, B));
+  }
+
+  @Test
+  void returnsTheNumberOfLiveFish6() {
+    Solution object = new Solution();
+    int[] A = {3, 2};
+    int[] B = {1, 0};
+    assertEquals(1, object.solution(A, B));
+  }
+
+  @Test
+  void returnsTheNumberOfLiveFish7() {
+    Solution object = new Solution();
+    int[] A = {3, 2};
+    int[] B = {1, 1};
+    assertEquals(2, object.solution(A, B));
+  }
+
 }
