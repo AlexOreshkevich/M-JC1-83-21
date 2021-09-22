@@ -1,6 +1,8 @@
 package by.academy.jc.ht.akbarova.ht9;
 
 public class MyStack<V> {
+    private int size;
+    private Node head;
     private class Node {
         V v;
         Node next;
@@ -9,9 +11,6 @@ public class MyStack<V> {
             this.v = v;
         }
     }
-
-    private int size;
-    private Node head;
 
     public MyStack() {
         size = 0;
