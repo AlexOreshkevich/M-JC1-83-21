@@ -3,7 +3,6 @@ package by.academy.jc.ht.zabrodsky.ht8;
 import java.util.Stack;
 
 class Solution {
-
   public int solution(int[] A, int[] B) {
 
     int numberOfFish = A.length;

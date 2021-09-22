@@ -61,5 +61,4 @@ class SolutionTest {
     int[] B = {1, 1};
     assertEquals(2, object.solution(A, B));
   }
-
 }
