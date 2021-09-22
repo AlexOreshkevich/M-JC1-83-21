@@ -14,6 +14,7 @@ public class MyStack<E> implements Iterable<E> {
   }
 
   private class Item<E> {
+
     E data;
     Item<E> next;
 
@@ -41,8 +42,9 @@ public class MyStack<E> implements Iterable<E> {
 
     @Override
     public E next() {
-      if (!hasNext())
+      if (!hasNext()) {
         throw new NoSuchElementException();
+      }
 
       Item<E> lastReturned = current;
       current = current.next;

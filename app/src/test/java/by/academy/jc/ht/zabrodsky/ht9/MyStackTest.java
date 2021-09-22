@@ -86,5 +86,4 @@ public class MyStackTest {
     myObject.pop();
     assertEquals(0, myObject.size());
   }
-
 }
