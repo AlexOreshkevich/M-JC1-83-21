@@ -236,7 +236,7 @@ public class MyStack <E> implements List {
             if (x.item == null) {
                 counter++;
                 continue;
-            };
+            }
             if (o !=null & x.item.equals(o)) {
                 return counter;
             }
