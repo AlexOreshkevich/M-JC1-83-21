@@ -1,7 +1,5 @@
 package by.academy.jc.ht.zhabko;
 
-
-
 import java.lang.annotation.*;
 import java.lang.reflect.*;
 import java.util.*;
@@ -29,7 +27,8 @@ class FamilyMember {
     }
 }
 
-public class AnnotationHomeTask {
+public class Solution {
+
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -66,5 +65,3 @@ public class AnnotationHomeTask {
 
 
 }
-
-
