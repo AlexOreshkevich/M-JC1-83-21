@@ -1,12 +1,8 @@
 package by.academy.jc.ht.shorokhov.ht7;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import java.lang.reflect.Method;
-import java.util.Scanner;
-
+import java.lang.annotation.*;
+import java.lang.reflect.*;
+import java.util.*;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -22,6 +18,7 @@ class FamilyMember {
         System.out.println("Spend: " + moneySpend);
         System.out.println("Budget Left: " + (budget - moneySpend));
     }
+
     @FamilyBudget(userRole = "JUNIOR", budgetLimit = 50)
     public void juniorUser(int budget, int moneySpend) {
         System.out.println("Junior Member");
