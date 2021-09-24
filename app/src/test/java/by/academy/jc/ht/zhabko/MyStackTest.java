@@ -1,14 +1,39 @@
 package by.academy.jc.ht.zhabko;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MyStackTest {
+
+    private static Stream<Arguments> providingTestMyStack() {
+        MyStack<Object> testStack = new MyStack<>();
+
+        testStack.push(123);
+        testStack.push("Test string first");
+        testStack.push(687);
+        testStack.push(645);
+        testStack.push("Test string second");
+        testStack.push(537);
+        testStack.push(null);
+        testStack.push(348);
+
+        return Stream.of(
+                Arguments.of(testStack)
+        );
+    }
+
+
+
+
 
     @Test
     void shouldPushAllIntegerObjects() throws RuntimeException {
@@ -118,69 +143,35 @@ public class MyStackTest {
         assertEquals(0,testSum);
     }
 
-    @Test
-    void shouldReturnTrueOnFoundNullObject() {
-        MyStack <Object> testObject = new MyStack<>();
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnTrueOnFoundNullObject(MyStack <Object> testStack) {
 
-        testObject.push(123);
-        testObject.push("Test string first");
-        testObject.push(687);
-        testObject.push(645);
-        testObject.push("Test string second");
-        testObject.push(537);
-        testObject.push(null);
-        testObject.push(348);
+        assertTrue(testStack.contains(null));
 
-        assertTrue(testObject.contains(null));
     }
 
-    @Test
-    void shouldReturnTrueOnFoundIntegerObject() {
-        MyStack <Object> testObject = new MyStack<>();
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnTrueOnFoundIntegerObject(MyStack <Object> testStack) {
 
-        testObject.push(123);
-        testObject.push("Test string first");
-        testObject.push(687);
-        testObject.push(645);
-        testObject.push("Test string second");
-        testObject.push(537);
-        testObject.push(null);
-        testObject.push(348);
-
-        assertTrue(testObject.contains(537));
+        assertTrue(testStack.contains(537));
     }
 
-    @Test
-    void shouldReturnTrueOnFoundStringObject() {
-        MyStack <Object> testObject = new MyStack<>();
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnTrueOnFoundStringObject(MyStack <Object> testStack) {
 
-        testObject.push(123);
-        testObject.push("Test string first");
-        testObject.push(687);
-        testObject.push(645);
-        testObject.push("Test string second");
-        testObject.push(537);
-        testObject.push(null);
-        testObject.push(348);
-
-        assertTrue(testObject.contains("Test string first"));
+        assertTrue(testStack.contains("Test string first"));
     }
 
-    @Test
-    void shouldReturnFalseOnUnFoundObject() {
-        MyStack <Object> testObject = new MyStack<>();
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnFalseOnUnFoundObject(MyStack <Object> testStack) {
 
-        testObject.push(123);
-        testObject.push("Test string first");
-        testObject.push(687);
-        testObject.push(645);
-        testObject.push("Test string second");
-        testObject.push(537);
-        testObject.push(348);
-
-        assertFalse(testObject.contains(0));
-        assertFalse(testObject.contains("Java"));
-        assertFalse(testObject.contains(null));
+        assertFalse(testStack.contains(0));
+        assertFalse(testStack.contains("Java"));
+        assertFalse(testStack.contains(null));
     }
 
     @Test
@@ -191,57 +182,31 @@ public class MyStackTest {
         assertEquals(123,testObject.peek());
     }
 
-    @Test
-    void shouldRemoveObject() {
-        MyStack <Object> testObject = new MyStack<>();
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldRemoveObject(MyStack <Object> testStack) {
 
-        testObject.push(123);
-        testObject.push("Test string first");
-        testObject.push(687);
-        testObject.push(645);
-        testObject.push("Test string second");
-        testObject.push(537);
-        testObject.push(null);
-        testObject.push(348);
+        assertTrue(testStack.remove(null));
+        assertTrue(testStack.remove((Object) 537));
+        assertTrue(testStack.remove("Test string second"));
+        assertFalse(testStack.remove((Object) 0));
+        testStack.pop();
 
-        assertTrue(testObject.remove(null));
-        assertTrue(testObject.remove((Object) 537));
-        assertTrue(testObject.remove("Test string second"));
-        assertFalse(testObject.remove((Object) 0));
-        testObject.pop();
-
-        assertEquals(645,testObject.peek());
+        assertEquals(645,testStack.peek());
     }
 
-    @Test
-    void shouldConvertToArray() {
-        MyStack <Object> testStack = new MyStack<>();
-        Object[] objectsArray = {348,null,537,"Test string second",645,687,"Test string first",123};
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldConvertToArray(MyStack <Object> testStack) {
 
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+        Object[] objectsArray = {348,null,537,"Test string second",645,687,"Test string first",123};
 
         assertArrayEquals(objectsArray,testStack.toArray());
     }
 
-    @Test
-    void shouldClearMyStack() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldClearMyStack(MyStack <Object> testStack) {
 
         testStack.clear();
 
@@ -252,18 +217,9 @@ public class MyStackTest {
         assertEquals(expectedMessage,actualMessage);
     }
 
-    @Test
-    void shouldReturnIndexOfElementOrMinus1IfNotFound() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnIndexOfElementOrMinus1IfNotFound(MyStack <Object> testStack) {
 
         assertEquals(0,testStack.indexOf((Object) 348));
         assertEquals(1,testStack.indexOf(null));
@@ -271,18 +227,9 @@ public class MyStackTest {
         assertEquals(-1,testStack.indexOf((Object) 0));
     }
 
-    @Test
-    void shouldReturnElementByIndex() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldReturnElementByIndex(MyStack <Object> testStack) {
 
         assertEquals( 348,testStack.get(0));
         assertEquals(null,testStack.get(1));
@@ -297,18 +244,9 @@ public class MyStackTest {
         assertEquals(expectedMessage,actualMessage);
     }
 
-    @Test
-    void shouldSetElementOnIndex() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldSetElementOnIndex(MyStack <Object> testStack) {
 
         //Exception test
         Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
@@ -325,18 +263,9 @@ public class MyStackTest {
         assertEquals("String",testStack.get(1));
     }
 
-    @Test
-    void shouldAddNodeOnIndexPlaceWithOffsetOfOtherNodes() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldAddNodeOnIndexPlaceWithOffsetOfOtherNodes(MyStack <Object> testStack) {
 
         //Exception test
         Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
@@ -353,18 +282,9 @@ public class MyStackTest {
 
 
     //Not working correct
-    @Test
-    void shouldRemoveNodeWithOffsetOtherNodes() {
-        MyStack <Object> testStack = new MyStack<>();
-
-        testStack.push(123);
-        testStack.push("Test string first");
-        testStack.push(687);
-        testStack.push(645);
-        testStack.push("Test string second");
-        testStack.push(537);
-        testStack.push(null);
-        testStack.push(348);
+    @ParameterizedTest
+    @MethodSource("providingTestMyStack")
+    void shouldRemoveNodeWithOffsetOtherNodes(MyStack <Object> testStack) {
 
         //Exception test
         Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
