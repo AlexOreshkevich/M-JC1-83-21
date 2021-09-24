@@ -1,47 +1,58 @@
 package by.academy.jc.ht.shorokhov.ht9;
 
-public class MyStack {
-    private int[] arr;
-    private int top;
-    private int capacity;
+public class MyStack<E> {
 
-    public boolean isFull() {
-        return top == capacity - 1;
-    }
+    private Node head = null;
+    private int size;
 
-    public boolean isEmpty() {
-        return top == -1;
-    }
 
-    MyStack(int size) {
-        arr = new int[size];
-        capacity = size;
-        top = -1;
-    }
 
-    public void push(int x) throws Exception {
-        if (isFull()) {
-            throw new Exception("Stack is full");
-        } else {
-            System.out.println("Pushing new element: " + x);
-            arr[++top] = x;
+    private class Node<E> {
+        private E element;
+        private Node<E> next;
+
+
+
+
+        public Node(E element) {
+            this.element = element;
         }
     }
-    public int peek() throws Exception {
-        if(!isEmpty()){
-            return arr[top];
-        } else {throw new Exception("Stack is empty");}
+
+
+    public MyStack(){
+        head = null;
+        size = 0;
     }
 
-    public int pop() throws Exception {
-        if (isEmpty()) {
-            throw new Exception("Stack is empty");
-        }
-        System.out.println("Removing " + peek());
 
-        return arr[top--];
+    public void push(E element) {
+        Node node = new Node(element);
+        node.next = head;
+        head = node;
+        size++;
+
     }
+
+
+    public void pop() throws Exception {
+        if(head == null) throw new Exception("Stack is empty");
+        head = head.next;
+        size--;
+    }
+
+    public E peek() throws Exception {
+        if(head == null) throw new Exception("Stack is empty");
+        Node<E> prev = head;
+        return prev.element;
+    }
+
+
     public int size(){
-        return top + 1;
+        return size;
+    }
+
+    public boolean isEmpty(){
+        return size == 0;
     }
 }

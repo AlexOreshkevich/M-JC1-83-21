@@ -8,43 +8,94 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyStackTest {
 
     @Test
-    public void testPush() throws Exception {
-        MyStack stack = new MyStack(5);
-        assertTrue(stack.isEmpty());
-        stack.push(1);
-        assertFalse(stack.isEmpty());
+    public void testPushAndPeek() throws Exception {
+        MyStack<Integer> stack = new MyStack();
+        stack.push(5);
+        stack.push(15);
+        stack.push(6);
         stack.push(2);
         stack.push(3);
+        assertEquals(3, stack.peek());
 
 
     }
 
     @Test
-    public void testPop() throws Exception {
-        MyStack stack = new MyStack(5);
-        assertTrue(stack.isEmpty());
-        stack.push(1);
-        assertFalse(stack.isEmpty());
+    public void testPopAndPeek() throws Exception {
+        MyStack<Integer> stack = new MyStack();
         stack.push(2);
+        stack.push(12);
         stack.push(3);
-        assertEquals(3, stack.pop());
-        assertEquals(2, stack.pop());
-        assertEquals(1, stack.pop());
+        stack.push(9);
+        stack.push(143);
+        assertEquals(143, stack.peek());
+        stack.pop();
+        assertEquals(9, stack.peek());
+
+
     }
 
     @Test
-    public void testPeek() throws Exception {
-        MyStack stack = new MyStack(5);
-        assertTrue(stack.isEmpty());
-        stack.push(1);
-        assertFalse(stack.isEmpty());
-        System.out.println(stack.peek());
-    }
-    @Test
-    public void testSize() throws Exception {
-        MyStack stack = new MyStack(2);
-        stack.push(1);
-        assertEquals(1, stack.size());
+    public void testSizeAndEmpty() throws Exception {
+        MyStack<Integer> stack = new MyStack();
+        stack.push(2);
+        stack.push(12);
+        stack.push(3);
+        stack.push(9);
+        stack.push(143);
+        assertEquals(5, stack.size());
+        assertEquals(false, stack.isEmpty());
+
+
     }
 
+    @Test
+    public void testPopAndPeekStrings() throws Exception {
+        MyStack<String> stack = new MyStack();
+        stack.push("2");
+        stack.push("12");
+        stack.push("3");
+        stack.push("9");
+        stack.push("143");
+        assertEquals("143", stack.peek());
+        stack.pop();
+        assertEquals("9", stack.peek());
+
+
+    }
+
+    @Test
+    public void testPopAndPeekString() throws Exception {
+        MyStack<String> stack = new MyStack();
+        stack.push("2");
+        stack.push("12");
+        stack.push("3");
+        stack.push("9");
+        stack.push("143");
+        assertEquals("143", stack.peek());
+        stack.pop();
+        assertEquals("9", stack.peek());
+
+
+    }
+
+    @Test
+    public void testSizeAndEmptyString() throws Exception {
+        MyStack<String> stack = new MyStack();
+        stack.push("2");
+        stack.push("12");
+        stack.push("3");
+        stack.push("9");
+        stack.push("143");
+        assertEquals(5, stack.size());
+        assertEquals(false, stack.isEmpty());
+
+
+    }
+
+    @Test
+    public void testEmptyStack() throws Exception {
+        MyStack<String> stack = new MyStack();
+        assertEquals(true, stack.isEmpty());
+    }
 }
