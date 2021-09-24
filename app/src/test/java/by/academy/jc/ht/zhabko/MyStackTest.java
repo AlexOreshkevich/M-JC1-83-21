@@ -171,7 +171,7 @@ public class MyStackTest {
 
         assertFalse(testStack.contains(0));
         assertFalse(testStack.contains("Java"));
-        assertFalse(testStack.contains(null));
+
     }
 
     @Test
