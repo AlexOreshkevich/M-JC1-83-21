@@ -83,7 +83,7 @@ public class MyStackTest {
     @Test
     void shouldThrowRuntimeExceptionOnPeekOnEmptyMyStack() {
         MyStack <Integer> testObject = new MyStack<>();
-        Exception exception = assertThrows(RuntimeException.class, testObject::peek);
+        Exception exception = assertThrows(EmptyCollectionException.class, testObject::peek);
         String actualMessage = exception.getMessage();
         String expectedMessage = "Current MyStack is empty";
         assertEquals(expectedMessage,actualMessage);
@@ -92,7 +92,7 @@ public class MyStackTest {
     @Test
     void shouldThrowRuntimeExceptionOnPoPOnEmptyMyStack() {
         MyStack <Integer> testObject = new MyStack<>();
-        Exception exception = assertThrows(RuntimeException.class, testObject::pop);
+        Exception exception = assertThrows(EmptyCollectionException.class, testObject::pop);
         String actualMessage = exception.getMessage();
         String expectedMessage = "Current MyStack is empty";
         assertEquals(expectedMessage,actualMessage);
@@ -246,7 +246,7 @@ public class MyStackTest {
         testStack.clear();
 
         assertEquals(0,testStack.size());
-        Exception exception = assertThrows(RuntimeException.class, testStack::pop);
+        Exception exception = assertThrows(EmptyCollectionException.class, testStack::pop);
         String actualMessage = exception.getMessage();
         String expectedMessage = "Current MyStack is empty";
         assertEquals(expectedMessage,actualMessage);
@@ -291,7 +291,7 @@ public class MyStackTest {
 
 
         //Exception test
-        Exception exception = assertThrows(RuntimeException.class,() -> {testStack.get(8);});
+        Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
         String actualMessage = exception.getMessage();
         String expectedMessage = "Index out of range";
         assertEquals(expectedMessage,actualMessage);
@@ -311,7 +311,7 @@ public class MyStackTest {
         testStack.push(348);
 
         //Exception test
-        Exception exception = assertThrows(RuntimeException.class,() -> {testStack.get(8);});
+        Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
         String actualMessage = exception.getMessage();
         String expectedMessage = "Index out of range";
         assertEquals(expectedMessage,actualMessage);
@@ -339,7 +339,7 @@ public class MyStackTest {
         testStack.push(348);
 
         //Exception test
-        Exception exception = assertThrows(RuntimeException.class,() -> {testStack.get(8);});
+        Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
         String actualMessage = exception.getMessage();
         String expectedMessage = "Index out of range";
         assertEquals(expectedMessage,actualMessage);
@@ -367,7 +367,7 @@ public class MyStackTest {
         testStack.push(348);
 
         //Exception test
-        Exception exception = assertThrows(RuntimeException.class,() -> {testStack.get(8);});
+        Exception exception = assertThrows(IndexOutOfBoundsException.class,() -> {testStack.get(8);});
         String actualMessage = exception.getMessage();
         String expectedMessage = "Index out of range";
         assertEquals(expectedMessage,actualMessage);

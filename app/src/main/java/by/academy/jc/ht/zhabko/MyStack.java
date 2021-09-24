@@ -135,7 +135,7 @@ public class MyStack <E> implements List {
     public Object get(int index) {
 
         if (index >= size) {
-            throw new RuntimeException("Index out of range");
+            throw new IndexOutOfBoundsException("Index out of range");
         }
 
         int counter = 0;
@@ -156,7 +156,7 @@ public class MyStack <E> implements List {
     public Object set(int index, Object element) {
         Node <E> found = null;
         if (index >= size) {
-            throw new RuntimeException("Index out of range");
+            throw new IndexOutOfBoundsException("Index out of range");
         }
 
         int counter = 0;
@@ -178,7 +178,7 @@ public class MyStack <E> implements List {
     public void add(int index, Object element) {
 
         if (index >= size) {
-            throw new RuntimeException("Index out of range");
+            throw new IndexOutOfBoundsException("Index out of range");
         }
 
         int counter = 0;
@@ -204,7 +204,7 @@ public class MyStack <E> implements List {
     public Object remove(int index) {
 
         if (index >= size) {
-            throw new RuntimeException("Index out of range");
+            throw new IndexOutOfBoundsException("Index out of range");
         }
 
         int counter = 0;
@@ -259,9 +259,9 @@ public class MyStack <E> implements List {
         size++;
     }
 
-   E peek() throws RuntimeException {
+   E peek() throws EmptyCollectionException {
        if (first==null)
-           throw new  RuntimeException("Current MyStack is empty");
+           throw new EmptyCollectionException("Current MyStack is empty");
         return first.item;
     }
 
@@ -269,9 +269,9 @@ public class MyStack <E> implements List {
         linkFirst(e);
     }
 
-    void pop() throws RuntimeException {
+    void pop() throws EmptyCollectionException {
         if (first==null)
-            throw new RuntimeException("Current MyStack is empty");
+            throw new EmptyCollectionException("Current MyStack is empty");
         first=first.next;
     }
 
