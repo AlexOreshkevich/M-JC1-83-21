@@ -1,10 +1,8 @@
 package by.academy.jc.zhabko;
 
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.TreeMap;
@@ -12,69 +10,27 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import static by.academy.jc.io.FileSystemUtils.getResourcePath;
-import static by.academy.jc.io.FileSystemUtils.obtainResourcePath;
+
 
 public class WordCounter {
 
-    public static void main(String[] args) throws IOException {
-        WordCounter test = new WordCounter();
-        test.countWord();
-        System.out.println(test.getRootWord("Caresses"));
-        System.out.println(test.getRootWord("ponies"));
-        System.out.println(test.getRootWord("ties"));
-        System.out.println(test.getRootWord("caress"));
-        System.out.println(test.getRootWord("cats"));
-
-        System.out.println(test.getRootWord("Agreed"));
-        System.out.println(test.getRootWord("FEed"));
-
-        System.out.println(test.getRootWord("plastered"));
-        System.out.println(test.getRootWord("bled"));
-
-        System.out.println(test.getRootWord("motoring"));
-        System.out.println(test.getRootWord("sing"));
-
-        System.out.println(test.getRootWord("conflated"));
-        System.out.println(test.getRootWord("troubling"));
-
-        System.out.println(test.getRootWord("hopping"));
-        System.out.println(test.getRootWord("tanned"));
-        System.out.println(test.getRootWord("falling"));
-
-        System.out.println(test.getRootWord("filing"));
-        System.out.println(test.getRootWord("fail"));
-
-        System.out.println(test.getRootWord("happy"));
-        System.out.println(test.getRootWord("sky"));
-
-        System.out.println(test.getRootWord("relational"));
-        System.out.println(test.getRootWord("generalization"));
-        System.out.println(test.getRootWord("sensibiliti"));
-
-        System.out.println(test.getRootWord("triplicate"));
-        System.out.println(test.getRootWord("hopeful"));
-        System.out.println(test.getRootWord("goodness"));
-
-        System.out.println(test.getRootWord("allowance"));
-        System.out.println(test.getRootWord("dependent"));
-        System.out.println(test.getRootWord("effective"));
-
-        System.out.println(test.getRootWord("probate"));
-        System.out.println(test.getRootWord("goodness"));
-
-        System.out.println(test.getRootWord("controll"));
-        System.out.println(test.getRootWord("roll"));
+    Map<String,Integer> frequencyMap;
 
 
+    public boolean isContains (String word) {
+        return frequencyMap.containsKey(word);
     }
 
+    public int getFrequency (String word) {
+        return frequencyMap.get(word);
+    }
 
 
     public void countWord() throws IOException {
 
         FileReader input = null;
         StringBuilder allText = new StringBuilder();
-        Map<String,Integer> frequencyMap = new TreeMap<>();
+        frequencyMap = new TreeMap<>();
 
         try {
             input = new FileReader(getResourcePath("Frankenstein.txt"));
@@ -103,7 +59,7 @@ public class WordCounter {
         System.out.println(frequencyMap);
     }
 
-    private boolean isVowel (char ch) {
+    public boolean isVowel (char ch) {
         switch (ch) {
             case 'a':
             case 'e':
@@ -116,7 +72,7 @@ public class WordCounter {
         }
     }
 
-    private boolean containsVowel (CharSequence word) {
+    public boolean containsVowel (CharSequence word) {
         int i = 0;
         while (i < word.length()) {
              if (isVowel(word.charAt(i))) {
@@ -127,7 +83,7 @@ public class WordCounter {
         return false;
     }
 
-    private boolean isCVC (CharSequence word) {
+    public boolean isCVC (CharSequence word) {
         if (word.length() < 3) {
             return false;
         }
@@ -140,7 +96,7 @@ public class WordCounter {
 
 
     //Porter Stemmer Algorithm
-    private String getRootWord(String word) {
+    public String getRootWord(String word) {
         //Step 0
         StringBuilder rootWord = new StringBuilder(word.toLowerCase(Locale.ROOT));
         int m = 0;
@@ -303,13 +259,6 @@ public class WordCounter {
         if (rootWord.length() > 2 && m > 1 && rootWord.charAt(rootWord.length()-1) == 'l' && rootWord.charAt(rootWord.length()-2) == 'l') {
             rootWord.deleteCharAt(rootWord.length()-1);
         }
-
-
-
-
-
-
-
 
         return rootWord.toString();
     }
