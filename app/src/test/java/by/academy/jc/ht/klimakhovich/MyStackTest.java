@@ -18,6 +18,7 @@ class MyStackTest {
         num.push(6);
         assertEquals(6, num.peek());
     }
+
     @Test
     public void shouldReturnSecondToLastNumber() {
         MyStack<Integer> num;
@@ -31,6 +32,7 @@ class MyStackTest {
         num.pop();
         assertEquals(9, num.peek());
     }
+
     @Test
     public void shouldReturnSecondToLastString() {
         MyStack<String> str;
