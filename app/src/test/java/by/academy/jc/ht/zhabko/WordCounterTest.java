@@ -76,6 +76,14 @@ public class WordCounterTest {
     }
 
     @Test
+    void shouldReturnFrequencyIfContains() throws IOException {
+        WordCounter test = new WordCounter();
+        test.countWord();
+        assertEquals(128,test.getFrequency("upon"));
+        assertEquals(-1,test.getFrequency("abrahabra"));
+    }
+
+    @Test
     void shouldCreateTreeMapOfWorsd() throws IOException {
         WordCounter test = new WordCounter();
         test.countWord();

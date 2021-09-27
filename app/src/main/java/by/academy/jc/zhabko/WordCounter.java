@@ -22,7 +22,13 @@ public class WordCounter {
     }
 
     public int getFrequency (String word) {
-        return frequencyMap.get(word);
+
+        if (frequencyMap.containsKey(word)) {
+            return frequencyMap.get(word);
+        } else {
+            return -1;
+        }
+
     }
 
 
