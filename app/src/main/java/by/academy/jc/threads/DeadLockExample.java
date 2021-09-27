@@ -1,6 +1,38 @@
 package by.academy.jc.threads;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 public class DeadLockExample {
+
+  private String mySurname;
+
+  public void process() {
+    // surname -> chars
+    Set<Character> letters = new HashSet<>();
+    char[] chars = mySurname.toCharArray();
+    for (char c : chars) {
+      letters.add(c);
+    }
+
+    String testSurname = "testsdf";
+    List<String> allSurnames = new ArrayList<>();
+    List<String> filtered = allSurnames.stream().filter(
+        s -> {
+          char[] currentChars = s.toCharArray();
+          int amountOfMatches = 0;
+          for (char letter : currentChars) {
+            if (letters.contains(letter)) {
+              amountOfMatches++;
+            }
+          }
+          return amountOfMatches >= 2;
+        }
+    ).collect(Collectors.toList());
+  }
 
   public void method1() {
     synchronized (String.class) {
