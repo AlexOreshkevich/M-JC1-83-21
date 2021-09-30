@@ -1,12 +1,26 @@
 package by.academy.jc.ht.zhabko;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class Person {
-    String name;
-    String surName;
-    int age;
+
+    private String name;
+    private String surName;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public int getAge() {
+        return age;
+    }
 
 
     enum NAMES {
@@ -62,22 +76,25 @@ public class Person {
 
     }
 
-    public static void main(String[] args) {
-        List <Person> people = new LinkedList<>();
-        for (int i=0; i<100; i++) {
-            Person person = new Person();
-            if (!people.contains(person)) {
-                people.add(person);
+    public Person(String name, String surName, int age) {
+
+        this.name = name;
+        this.surName = surName;
+        this.age = age;
+    }
+
+    public boolean equals(Object o) {
+        if (o.getClass() != Person.class) {
+            return false;
+        } else {
+            if (((Person) o).getName() == name && ((Person) o).getSurName() == surName && ((Person) o).getAge() == age) {
+                return true;
             } else {
-                continue;
+                return false;
             }
-
-            System.out.println();
-            System.out.print(person.name+"  ");
-            System.out.print(person.surName+"  ");
-            System.out.print(person.age+"  ");
-
-            //people.stream().collect()
         }
+
+
     }
 }
+
