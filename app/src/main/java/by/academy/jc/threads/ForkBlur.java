@@ -1,5 +1,6 @@
 package by.academy.jc.threads;
 
+import by.academy.jc.io.FileSystemUtils;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.concurrent.ForkJoinPool;
@@ -71,7 +72,7 @@ public class ForkBlur extends RecursiveAction {
   // Plumbing follows.
   public static void main(String[] args) throws Exception {
     String srcName = "red-tulips.jpg";
-    File srcFile = new File(srcName);
+    File srcFile = new File(FileSystemUtils.getResourcePath(srcName));
     BufferedImage image = ImageIO.read(srcFile);
 
     System.out.println("Source image: " + srcName);

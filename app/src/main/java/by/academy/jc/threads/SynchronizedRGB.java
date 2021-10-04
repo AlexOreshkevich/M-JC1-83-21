@@ -9,11 +9,10 @@ public class SynchronizedRGB {
   private int red;
   private int green;
   private int blue;
+
   private String name;
 
-  private void check(int red,
-      int green,
-      int blue) {
+  private void check(int red, int green, int blue) {
     if (red < 0 || red > 255
         || green < 0 || green > 255
         || blue < 0 || blue > 255) {
@@ -32,10 +31,7 @@ public class SynchronizedRGB {
     this.name = name;
   }
 
-  public void set(int red,
-      int green,
-      int blue,
-      String name) {
+  public void set(int red, int green, int blue, String name) {
     check(red, green, blue);
     synchronized (this) {
       this.red = red;
