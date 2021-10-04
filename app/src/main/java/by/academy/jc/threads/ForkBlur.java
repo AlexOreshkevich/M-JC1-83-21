@@ -79,12 +79,12 @@ public class ForkBlur extends RecursiveAction {
 
     BufferedImage blurredImage = blur(image);
 
-    String dstName = "blurred-tulips.jpg";
+    String dstName = System.getProperty("user.dir") + "/app/src/main/resources/blurred-tulips.jpg";
     File dstFile = new File(dstName);
     ImageIO.write(blurredImage, "jpg", dstFile);
 
     System.out.println("Output image: " + dstName);
-
+    System.out.println("dstFile " + dstFile.getAbsolutePath());
   }
 
   public static BufferedImage blur(BufferedImage srcImage) {
@@ -114,7 +114,7 @@ public class ForkBlur extends RecursiveAction {
         " milliseconds.");
 
     BufferedImage dstImage =
-        new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+        new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
     dstImage.setRGB(0, 0, w, h, dst, 0, w);
 
     return dstImage;
