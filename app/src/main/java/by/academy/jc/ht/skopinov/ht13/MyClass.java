@@ -8,36 +8,40 @@ import java.util.Set;
 
 public class MyClass {
 
-  public List<Person> creatingPersons() {
-    List<Person> group = new ArrayList<>();
-    String[] name = {"Leyli", "Nataliya", "Alexey", "Artut", "Ekaterina", "Vladislav", "Iliya", "Valeriya", "Dmitry", "Timofey", "Ivan", "Petr", "Sergey", "Maxim", "Pavel"};
-    String[] surname = {"Akbarova", "Dubovtsova", "Zhabko", "Zabrodskiy", "Zaykovskaya", "Klimahovich", "Lukashevich", "Sergeychik", "Skopinov", "Shorohov", "Ivanov", "Petrov", "Smirnov", "Sidorov", "Pavlov"};
+  String[] names = {"Leyli", "Nataliya", "Alexey", "Artut", "Ekaterina", "Vladislav", "Iliya", "Valeriya", "Dmitry", "Timofey", "Ivan", "Petr", "Sergey", "Maxim", "Pavel"};
+  String[] surnames = {"Akbarova", "Dubovtsova", "Zhabko", "Zabrodskiy", "Zaykovskaya", "Klimahovich", "Lukashevich", "Sergeychik", "Skopinov", "Shorohov", "Ivanov", "Petrov", "Smirnov", "Sidorov", "Pavlov"};
+  int amountOfPersons = 100;
 
-    for (int i = 0; i < 100; i++) {
-      group.add(new Person(name[(int) (Math.random() * 15)],
-          surname[(int) (Math.random() * 15)],
+  public List<Person> creatingPersons(String[] names, String[] surnames, int amountOfPersons) {
+    this.names = names;
+    this.surnames = surnames;
+    this.amountOfPersons = amountOfPersons;
+    List<Person> group = new ArrayList<>();
+    for (int i = 0; i < amountOfPersons; i++) {
+      group.add(new Person(names[(int) (Math.random() * names.length)],
+          surnames[(int) (Math.random() * surnames.length)],
           (int) (Math.random() * 16) + 15));
     }
     return group;
   }
 
-  public Set<String> customCollector() {
-    List<Person> group = creatingPersons();
-
-    String mySurname = "Skopinov";
+  public Set<Character> mySurnameLetters(String surname){
     Set<Character> letters = new HashSet<>();
-    char[] chars = mySurname.toCharArray();
+    char[] chars = surname.toLowerCase().toCharArray();
     for (char c : chars) {
       letters.add(c);
     }
+    return letters;
+  }
 
+  public Set<String> customCollector(List<Person> group, Set<Character> mySurnameLetters) {
     return group.stream()
         .filter(person -> person.getAge() < 21)
         .filter(person -> {
-          char[] currentChars = person.getSurname().toCharArray();
+          char[] currentChars = person.getSurname().toLowerCase().toCharArray();
           int numberOfMatches = 0;
           for (char letter : currentChars) {
-            if (letters.contains(letter)) {
+            if (mySurnameLetters.contains(letter)) {
               numberOfMatches++;
             }
           }
