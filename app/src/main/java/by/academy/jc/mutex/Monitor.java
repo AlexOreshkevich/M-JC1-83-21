@@ -36,10 +36,13 @@ public class Monitor {
 
         // notifies the consumer thread that
         // now it can start consuming
+        // once you have something in list, you can have the consumer thread consume it,
+        // or if you have consumed something, you can have the producer produce something
         notify();
 
-        // makes the working of program easier
-        // to understand
+        // makes the working of program easier to understand
+        // ( just make the output of program run in step wise manner and not display
+        // everything all at once so that you can see what actually is happening in the program)
         Thread.sleep(1000);
       }
     }
@@ -60,10 +63,11 @@ public class Monitor {
 
         System.out.println("Consumer consumed-" + val);
 
-        // Wake up producer thread
+        // Wake up producer thread to let it produce something
         notify();
 
         // and sleep
+        // see explanation above, reason is the same
         Thread.sleep(1000);
       }
     }
