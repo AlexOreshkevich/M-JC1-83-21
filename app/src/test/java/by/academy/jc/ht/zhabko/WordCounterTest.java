@@ -1,6 +1,5 @@
 package by.academy.jc.ht.zhabko;
 
-import by.academy.jc.zhabko.WordCounter;
 import org.junit.jupiter.api.Test;
 
 
