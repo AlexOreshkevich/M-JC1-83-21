@@ -1,4 +1,4 @@
-package by.academy.jc.ht.akbarova.ht_minAbsSum;
+package by.academy.jc.ht.akbarova.ht_minabssum;
 
 import java.util.Arrays;
 
