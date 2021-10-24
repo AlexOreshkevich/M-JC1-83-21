@@ -1,0 +1,430 @@
+Improving Intergroup Relations with Extended Contact among Young Children: Mediation by Intergroup Empathy and Moderation by Direct Intergroup Contact
+
+LORIS VEZZALI, MILES HEWSTONE, DORA CAPOZZA, ELENA TRIFILETTI and GIAN ANTONIO DI BERNARDO
+
+ABSTRACT
+A correlational study investigated extended contact as a strategy to improve outgroup attitudes and
+stereotyping and to prepare children for future contact. Additional aims were to investigate when
+and why the effects of extended contact occur. In particular, intergroup empathy was tested as a
+mediator and direct contact (i.e. cross-group friendship) as a moderator of extended contact.
+Participants were Italian and immigrant elementary school children. Results showed that extended contact was
+associated with improved intergroup empathy, which, in turn, was associated with more positive
+outgroup attitudes, stereotypes and behavioural intentions. These effects were significant only among
+participants with a low or moderate level of direct contact. The theoretical and practical implications
+of findings are discussed. Copyright © 2016 John Wiley & Sons, Ltd.
+
+Decades of research have consistently demonstrated that direct (i.e. face-to-face) intergroup
+contact is an extremely useful strategy for reducing prejudice (Allport, 1954;
+Hodson & Hewstone, 2013). Despite their effectiveness, however, strategies based on
+face-to-face contact have important limitations. First, they are unlikely to be implemented
+in segregated contexts or, in any case, where there are few opportunities for contact
+(Turner, Hewstone, Voci, Paolini, & Christ, 2007). Second, contact is generally less effective
+for minorities than for majorities (Tropp & Pettigrew, 2005). These limitations can be
+overcome by focusing on indirect contact strategies, such as extended contact (Wright,
+Aron, McLaughlin-Volpe, & Ropp, 1997). The aim of this study is to investigate whether,
+when and how extended contact improves outgroup attitudes and behavioural intentions
+among children. In fact, although there is a wide literature on extended contact among
+adults, only few studies examined extended contact in young samples. It is therefore important
+to test whether extended contact works similarly for children as for adults. Because
+intergroup experiences during childhood serve as building blocks for the formation of
+outgroup attitudes and consequently outgroup behaviour and intergroup relations among
+adults (Abrams & Killen, 2014), and because schools are an ideal context for running
+prejudice-reduction interventions (Cameron & Turner, in press), we believe that investigating
+possible ways to improve outgroup attitudes in educational contexts among children
+should be a priority for psychologists (Turner & Cameron, 2016).
+To assess predicted effects, we consider outgroup attitudes and stereotypes as well as intentions
+to have contact with outgroup members in the future. We examine direct contact
+as a moderator of extended contact effects, because previous work has shown that extended
+contact is most effective when prior direct contact is low (Christ et al., 2010). Moreover,
+we evaluate intergroup empathy as a new mediator of extended contact. We are not
+aware of any study testing the effects of extended contact on outgroup attitudes, stereotypes
+and behavioural intentions among both majority and minority group children.
+
+THE EXTENDED CONTACT HYPOTHESIS
+According to the extended contact hypothesis (Wright et al., 1997), merely knowing that
+an ingroup member has a close relationship with one or more outgroup members can reduce
+prejudice. Extended contact has several advantages over direct contact (Turner,
+Hewstone, Voci, et al., 2007; Wright et al., 1997). First, for extended contact to work, individuals
+do not need to personally know an outgroup member; rather, it is sufficient that
+they are exposed to a friendly relation between at least one ingroup and one outgroup
+member. Second, to the extent that group membership is more likely to be salient to an observer
+than to a person directly involved in contact, generalization of positive attitudes is
+favoured (Brown & Hewstone, 2005). Third, observing an intergroup encounter rather
+than taking active part in it should evoke less intergroup anxiety, which has been shown
+to produce detrimental effects on intergroup relations (Stephan, 2014).
+A recent extensive review by Vezzali, Hewstone, Capozza, Giovannini and Wölfer
+(2014) revealed widespread effects of extended contact across several outcome variables,
+target-groups, contexts and age-groups. Notably, in contrast to direct contact, extended
+contact is equally effective for both majority and minority members (Turner, Hewstone,
+& Voci, 2007; see Vezzali et al., 2014). Despite the increasing interest in the effects of extended
+contact, however, few studies have investigated its effects among children. The only experimental
+test of extended contact among children of which we are aware was
+conducted by Vezzali, Stathi, Giovannini, Capozza and Visintin (2015). They asked Italian
+elementary and high-school children to work in small ethnically homogeneous groups with
+the cover story of competing for the best essay on cross-group friendships. By this means,
+children exchanged information on their friendships with outgroup members (represented
+by immigrants). Results revealed that the intervention increased the number of participants’
+outgroup friends three months after the intervention, an effect sequentially mediated
+by ingroup and outgroup norms, and by intentions to have contact with outgroup members
+(assessed one week after the intervention).
+Additional evidence comes from two cross-sectional studies. In the first, Vezzali,
+Giovannini and Capozza (2012) examined the effects of extended contact among Italian
+elementary school children. Their results revealed that extended contact (number of immigrant
+friends of participants’ best ingroup friend) was associated with reduced implicit
+prejudice, but only among those with fewer immigrant friends of their own. Pahlke, Bigler
+and Suizzo (2012) examined White preschool children and operationalized extended contact
+as the number of friends from minority groups reported by children’s mothers. Results
+revealed that extended contact via mothers was associated with improved outgroup attitudes,
+over and above the effects of amount of cultural diversity in the children’s school
+and in the neighbourhood.
+In contrast with these results, Feddes, Noack and Rutland’s (2009) longitudinal study of
+German (majority) and Turkish (minority) children aged 7–11 years did not find evidence
+for the effectiveness of extended contact. Their results showed that only direct cross-group
+friendships, but not extended contact (number of outgroup friends of children’s three best
+friends), were longitudinally associated (seven months after the first assessment) with more
+positive outgroup attitudes, and only among majority children. This finding may, however,
+be because of the extended contact measure used: participants were asked to report how
+many of their ‘friends’ have outgroup friends, instead of reporting the number of ingroup
+friends’ outgroup friends.
+These prior studies, with the exception of that by Feddes et al. (2009), were conducted by
+considering only children belonging to the majority group. Thus, it is of primary importance
+to test extended contact by considering both majority and minority children. In the case of
+minority children, a further consideration arises. In Italian schools, the number of immigrant
+children in a class is often very low, which reduces the opportunity for immigrant children
+to know about a fellow ingroup member (another migrant) who has outgroup friends. However,
+immigrant children may well have outgroup friends, and indeed research in Italy has
+found that minority members generally have a higher number of cross-group friends compared
+with the majority (Vezzali, Giovannini, & Capozza, 2010), as is to be expected given
+the relative proportions of each group. If minority children have friends from the majority
+group, who themselves have immigrant friends, then we should also take into account this
+form of extended contact, because it provides children with knowledge of ingroup and
+outgroup members engaging in contact (and not merely contact, but friendship).
+
+HOW EXTENDED CONTACT WORKS
+Wright et al. (1997) proposed four mechanisms through which extended contact should
+improve outgroup attitudes. First, extended contact should reduce intergroup anxiety
+which, in turn, should be associated with more positive outgroup attitudes (Vezzali et al.,
+2014). Second, observing a friendly interaction between an ingroup and an outgroup member
+should bring the outgroup member closer to the self, and this in turn should improve
+outgroup attitudes.
+The third proposed mediator is ingroup norms. Because group membership should be
+salient to an observer of an intergroup encounter, thus favouring the processes of selfcategorization
+as group member and adherence to group norms (Jetten, Spears, &
+Manstead, 1996), observing an ingroup member acting in a friendly manner with an
+outgroup member can suggest that the ingroup has positive norms about intergroup
+contact. Positive ingroup norms, in turn, should be associated with improved outgroup
+attitudes. Outgroup norms are the fourth mechanism proposed by Wright et al. (1997).
+As for ingroup norms, observing a cross-group interaction may indicate that the outgroup
+is positively oriented towards intergroup contact, in turn fostering more positive attitudes
+towards its members.
+Turner, Hewstone, Voci and Vonofakou (2008) conducted two correlational studies
+among White British and South-West Asian students in the UK that tested simultaneously
+the four mediators proposed by Wright et al. (1997). Results showed that reduced intergroup
+anxiety, increased IOS and perception that both ingroup and outgroup had
+favourable norms towards contact mediated the relationship between extended contact
+and more positive outgroup attitudes.
+Other studies identified further mediators of extended contact, such as self-disclosure
+(Turner, Hewstone, & Voci, 2007, Studies 2 and 3; for a review, see Vezzali et al.,
+2014). However, little research has investigated the processes that mediate effects of extended
+contact among children. One exception was provided by the study by Vezzali
+et al. (2015), who found evidence for ingroup and outgroup norms and behavioural intentions
+as the mediators of extended contact.
+Given this sparse empirical evidence, we believe that it is important to examine in more
+depth whether, when and how extended contact is associated with improved outgroup attitudes
+in children. Based on the little evidence provided by studies conducted among children
+we expect no differences in how extended contact operates among children compared
+with adults (although, given the lack of studies, this is an empirical question that still needs
+to be answered). In particular, we expect that affective processes (in this case, intergroup
+empathy) will mediate the effects of extended contact on our dependent variables (but only
+for those with low levels of direct contact, see below). This test is especially important,
+given that we are not aware of any study testing mediation of extended contact effects
+by affective factors among elementary schoolchildren.
+
+THE PRESENT STUDY
+The aim of the present study was to test the effectiveness of extended contact among
+children. As outcome variables, we decided to assess outgroup attitudes and stereotypes
+to be consistent with most of previous research. Because extended contact is considered
+as a preparatory strategy for future contact, and because intentions are the most proximal
+antecedent of actual behaviour (Ajzen, 1991), we also included a measure assessing the
+desire to engage in contact with outgroup members. We also sought to identify when
+and why the effects of the extended contact occur.
+In this study, we tested for the first time intergroup empathy as a mediator of extended
+contact. Empathy can be defined as the emotional response to the emotions felt by
+outgroup members (Stephan & Finlay, 1999). There is an extensive literature showing that
+intergroup empathy has beneficial effects on outgroup attitudes (Batson, 2010; Galinsky,
+Gilin, & Massux, 2011). Moreover, intergroup empathy is a key mediator of direct contact
+(Brown & Hewstone, 2005). Children start developing empathic feelings during their preschool
+years (Radke-Yarrow, Zahn-Waxler, & Chapman, 1983), and research has revealed
+that, as for adults, empathy in children is associated with increased prosocial behaviour
+(Litvack-Miller, McDougall, & Romney, 1997). However, despite the well-established
+effects of empathy in children, there is a paucity of research on intergroup empathy in this
+age group.
+Few studies have examined the association between empathy towards the outgroup and
+outgroup attitudes. Nesdale and collaborators found, using samples of children between 5
+and 12 years of age, that empathy towards outgroup members improved outgroup attitudes
+(Nesdale, Griffiths, Durkin, & Maass, 2005) and reduced intergroup aggression tendencies
+(Nesdale, Milliner, Duffy, & Griffiths, 2009). We hypothesized that extended contact, by
+bringing outgroup members closer to the self, would facilitate the understanding of their
+feelings (i.e. would be associated with increased intergroup empathy), which in turn should
+be associated with improved outgroup attitudes.
+To learn more about the boundary conditions that may limit the effectiveness of
+extended contact, we also tested direct contact as a moderator of the hypothesized effects.
+Research has shown that attitudes are stronger and more resistant to change when they are
+formed on the basis of personal experiences (Fazio, Powell, & Herr, 1983), a claim confirmed
+specifically for direct intergroup contact and strength of outgroup attitudes
+(Vonofakou, Hewstone, & Voci, 2007). Thus, attitudes will form primarily as a function
+of direct experience with an attitude object. However, if personal experiences are scarce
+or unavailable, individuals will rely on indirect experiences as a source of information
+for attitude formation, and over time such indirect experiences (in the form of extended
+contact) are associated with stronger outgroup attitudes, but only for respondents in segregated
+settings or for individuals with less experience of direct, personal contact with the
+outgroup (e.g. Christ et al., 2010).
+We therefore hypothesized that extended contact (indirect experience) would be used as
+a source of information, and thus would be associated with more positive outgroup
+attitudes, via intergroup empathy, only for those who have less direct experience of
+cross-group interactions (i.e. for participants with less direct contact). In other words, we
+expected a pattern of moderated mediation, where empathy is the mediator and direct
+contact is the moderator. The theoretical model is shown in Figure 1.
+Previous studies on extended contact conducted with young samples assessed only
+mediating (e.g. Turner, Tam, Hewstone, Kenworthy, & Cairns, 2013) or moderating
+(e.g. Vezzali, Giovannini, et al., 2012) processes, but to our knowledge they did not combine
+mediating and moderating processes in a single design. This is however of primary
+importance, both theoretically and practically, because extended contact may exert its effects
+differently for different categories of people. Specifically, it is not sufficient to know
+whether intergroup empathy mediates the effects of extended contact. Rather, it is important
+to understand whether extended contact impacts on dependent variables depending on
+one’s level of direct contact, and whether intergroup empathy plays a different role in mediating
+extended contact effects depending on participants’ level of direct contact. Results
+will provide indications (i) on the need to examine further mediators of extended contact
+for the various levels of direct contact, and (ii) on how to conduct interventions and on
+which variables to focus to improve outgroup attitudes among children varying in their
+level of direct contact.
+
+METHOD
+Participants and procedure
+The sample consisted of 308 children (168 males, 140 females) enrolled in mixed elementary
+school classes in Northern Italy. Mean age was 10 years 5 months. Two hundred and
+twenty-seven children were Italians (121 males, 106 females; mean age = 10 years
+4 months; age ranged from 8 years 9 months to 11 years 11 months); 81 participants were
+immigrants (47 males, 34 females; mean age = 10 years 6 months; age ranged from 8 years
+11 months to 12 years 4 months). The greatest number of immigrants had Africa as their
+country of origin (43.2%), followed by Asia (39.6%), Eastern Europe (16%) and South
+America (1.2%). Participants completed a questionnaire during classes. The questionnaires
+for Italians and immigrants were identical, except that Italians were asked about their relations
+with immigrants, whereas immigrants were asked about their relations with Italians.
+
+Measures
+Direct and extended contact. Measures were adapted from Feddes et al. (2009) and
+from Vezzali, Giovannini et al. (2012). To assess direct contact, participants were asked
+to give the names of up to three best friends. Children were then asked to indicate whether
+these friends were Italians or came from another country. Scores ranged from 0 (no
+outgroup friends) to 3 (three outgroup friends). To measure extended contact, children indicated
+on a 5-point scale (ranging from 1 = none to 5 = all) how many outgroup friends
+their single best friend had. If the best friend was an outgroup member, then extended contact
+was measured as this outgroup member’s friendships with members of the participant’s
+ingroup.
+Intergroup empathy. Intergroup empathy was assessed with two items adapted from
+Capozza, Trifiletti, Vezzali and Favara (2013): ‘Do you understand the emotions felt by
+immigrant [Italian] children?’; ‘Do you feel the same emotions felt by immigrant [Italian]
+children?’. The 5-point scale was anchored by 1 (not at all) and 5 (very much). The two
+items were averaged to form a composite measure of intergroup empathy (r = .38,
+p<.001), with higher scores reflecting stronger empathy towards the outgroup.
+Outgroup attitudes. We used a measure of social distance, adapted from Esses and
+Dovidio (2002), consisting of three items assessing children’s willingness to accept an unknown
+immigrant [Italian] child as a neighbour, classmate or close friend. A 5-point scale
+was used, ranging from 1 (absolutely not) to 5 (absolutely yes); 3 was the mid-point
+(maybe yes, maybe not). Responses were averaged across the three items to form a scale
+(alpha = .85), with higher scores indicating more positive outgroup attitudes.
+Outgroup stereotypes. Participants indicated how many outgroup members possessed
+each of four traits (taken from Vezzali, Stathi, & Giovannini, 2012): nice (reverse-scored),
+good (reverse-scored), bad, dirty. The 5-point response scale was anchored by 1 (none) and
+5 (all). Items were aggregated in a single index of negative outgroup stereotypes
+(alpha = .69).
+Outgroup behavioural intentions. We adapted three items from Cameron and Rutland
+(2006). Participants were asked to think about meeting an unknown immigrant [Italian]
+child at the park and to indicate on a 5-point scale (1 = absolutely not; 5=absolutely yes;
+3=maybe yes, maybe not) whether they would be happy to meet him/her, would like to
+play with him/her, and would invite him/her to go and have an ice-cream together. Ratings,
+reflecting more positive intended behaviour towards the outgroup, were averaged
+(alpha = .80).
+
+RESULTS
+Means, standard deviations, and correlations among items are shown in Table 1. In Table 2
+we present differences between Italian and immigrant children.
+As shown in Table 1, both direct and extended contact were positively associated with
+intergroup empathy; intergroup empathy was positively associated with our hypothesized
+dependent variables. As shown in Table 2, immigrants had more direct cross-group
+friends and extended contact than did Italians. Moreover, immigrants reported higher degrees
+of intergroup empathy, more positive outgroup attitudes and intentions to meet
+outgroup members than did Italians. In contrast, outgroup stereotypes were not very negative
+and did not differ between the two groups. These findings replicate previous studies
+showing that immigrants perceived intergroup relations as more positive compared to
+Italians (e.g. Vezzali et al., 2010), possibly because of their greater level of intergroup
+contact.
+
+MAIN ANALYSES: MODERATED MEDIATION
+To test hypotheses, we first conducted a hierarchical regression to examine whether the effects
+of extended contact on intergroup empathy depended on the level of direct contact
+reported by participants. Centred scores for extended and direct contact were entered in
+the first step; the two-way interaction was added in the second step. In line with predictions,
+the two-way interaction was significant, b =-.14, SE = .06, p<.05, Fchange (1,
+304) = 5.24, p<.05. Decomposition of the interaction revealed that extended contact
+was associated with higher intergroup empathy only among participants with fewer
+cross-group friendships (-1 SD), b = .27, SE = .10, p<.01, or with an average level of
+cross-group friendships, b = .14, SE = .06, p<.05, but not among those with more crossgroup
+friends (+1 SD), b = .00, SE = .08, p = .998 (Figure 2).
+Second, we conducted a series of similar hierarchical regressions, one for each dependent
+variable. In each regression, intergroup empathy was entered as an additional predictor.
+Results revealed that intergroup empathy was associated with outcome variables over
+and above the effects of the other predictors. Specifically, intergroup empathy was associated
+with improved outgroup attitudes (b = .23, SE = .04, p<.001), less negative outgroup
+stereotypes (b =-.13, SE = .04, p<.001) and more positive behavioural intentions towards
+the outgroup (b = .22, SE = .04, p<.001).
+To test whether the hypothesized moderated mediation effects were significant, we used
+the PROCESS macro for SPSS provided by Hayes (2012, Model 8).2 In line with predictions,
+the moderated mediation effect was significant for all dependent variables. As can be
+seen in Table 3, the indirect association of extended contact with the criterion variables via
+higher intergroup empathy was significant among those with fewer cross-group friendships,
+ps<.05, but not among those with more outgroup friends. The indirect effect of extended
+contact was also reliable among participants with a moderate level of direct contact,
+ps<.05 (Table 3).3, 4
+
+ADDITIONAL ANALYSES: MODERATION BY PARTICIPANTS’ ETHNIC
+GROUP
+Replicating prior research (Vezzali et al., 2010), Italian and immigrant children differed onmost
+variables (Table 2). Therefore, although not a focus of this article because we did not expect differences
+in how extended contact would operate formajority and minority respondents (Vezzali
+et al., 2014), we repeated the analyses presented above by testing whether ethnic group
+moderated some of the effects. Given differences between Italians and immigrants, reported in
+Table 2, it is important to test whether ethnic group moderates extended contact effects.
+In particular, group (Italian = 1, immigrant =-1) was added to the list of predictors
+(direct and extended contact); in the second step, we added the two-way interactions; in
+the third step, we included the three-way interaction.
+The two-way interaction between direct contact and group was significant for outgroup
+attitudes (b = .15, SE = .06, p<.05, Fchange (3, 300) = 2.91, p<.05) and behavioural intentions
+(b = .17, SE = .06, p<.05, Fchange (3, 300) = 2.98, p<.05), but not for negative
+outgroup stereotypes. In the latter case, in fact, although the interaction term was significant
+(b =-.10, SE = .05, p<.05), the portion of variance explained did not significantly
+differ from the model where two-way interactions were not included (Fchange (3, 300)
+= 1.42, p = .236). Decomposition of the interactions revealed that cross-group friendships
+were associated with more positive behavioural intentions (b = .25, SE = .08, p<.01) and
+outgroup attitudes (b = .16, SE = .08, p = .05) among Italians. In contrast, among immigrants,
+the effects of cross-group friendships on behavioural intentions (b =-.10,
+SE = .09, p = .265) and outgroup attitudes (b =-.13, SE = .09, p = .150) were nonsignificant.
+These results are in line with previous studies showing that the effects of direct
+contact are stronger for majority group members (Tropp & Pettigrew, 2005).
+Supporting the contention that effects of extended contact do not differ between majority
+and minority respondents (Vezzali et al., 2014), none of the two-way interaction terms
+including extended contact and group reached statistical significance, ps>.309. Moreover,
+the three-way interaction was not significant for either intergroup empathy or for the three
+dependent variables, ps>.279.5
+
+DISCUSSION
+In this correlational study, we sought to test whether, when and how extended contact has
+positive effects on outgroup attitudes, stereotypes and behavioural intentions among majority
+(Italians) and minority (immigrant) elementary school children. Results of the
+proposed moderated mediation model confirmed that extended contact was associated with
+higher empathy which, in turn, was associated with more positive outgroup attitudes,
+stereotypes and behavioural intentions. These effects were, however, only significant
+among participants with a low or moderate level of direct contact.
+On a theoretical level, our findings are consistent with previous studies showing beneficial
+effects of extended contact in children (e.g. Vezzali, Giovannini, et al. 2012). Some
+authors have suggested that extended contact can be useful as a preparatory strategy for
+real group interactions (Turner, Hewstone, Voci, et al., 2007), which can be stressful
+and anxiety-provoking. By increasing the desire to engage in contact with outgroup
+members, extended contact should facilitate the formation of cross-group friendships
+(see Vezzali et al., 2015) and, in general, yield smoother intergroup interactions. Our
+findings, showing an effect on willingness to engage in contact with outgroup members,
+thus support the role of this type of indirect contact as a preparatory strategy for direct
+intergroup experiences.
+We also reported evidence for a new mediator of extended contact: intergroup empathy.
+Extending previous research conducted with adults (e.g. Galinsky et al., 2011) and children
+(Nesdale et al., 2005, 2009), we demonstrated that intergroup empathy stemming
+from extended contact can be pivotal in improving outgroup attitudes and stereotypes
+and in promoting willingness to approach the outgroup. Future studies should examine additional
+mediators of extended contact in children. There is some evidence that cognitive
+mediators such as group norms (e.g. Vezzali et al., 2015), self-disclosure (Turner,
+Hewstone, & Voci, 2007, Studies 2 and 3) and IOS (e.g. Turner et al., 2008, Study 2)
+mediate extended contact effects in non-adult samples. However, in parallel with research
+on adults, evidence for mediation of extended contact by affective factors is scarce and
+mostly focused on intergroup anxiety. Future studies might examine more closely whether
+other affective processes act as mediators of extended contact.
+Crucially, the indirect effects of extended contact via intergroup empathy were reliable
+for children with a low or moderate level of direct contact, but not for those who reported
+higher levels of cross-group friendships. Thus, it seems that children rely on indirect contact
+experiences (e.g. extended contact) only when they do not have sufficient direct experience
+of intergroup contact. It should be noted that the fact that direct contact moderates
+the effects of extended contact does not mean that the two strategies are not complementary.
+Indeed, there is evidence that extended and direct contact have additive and mutually
+reinforcing effects on outgroup attitudes (e.g. Turner et al., 2008). However, when direct
+contact is not present, or is low, extended contact is an especially useful tool for reducing
+prejudice and preparing people for successful cross-group interactions.
+In our study, we proposed a moderated mediation model, combining both moderation
+(i.e. direct contact) and mediation (i.e. intergroup empathy) processes in a single theoretical
+model. We believe that this approach constitutes an important step in extended contact
+research with children, which had previously focused on moderator and mediation processes
+separately. It also has important theoretical and practical implications. For instance,
+the fact that extended contact was not associated with dependent variables for participants
+with high levels of direct contact does not mean that extended contact cannot be used for
+individuals who already have direct contact experiences. Rather, our combined approach
+suggests that intergroup empathy does not promote effects of extended contact for these
+individuals. Possibly, other mediators might show effects of extended contact effects for
+children high in direct contact. For instance, it is possible that, for children with positive
+experience of direct contact (i.e. children with high direct contact), extended contact contributes
+to enhancing a one-group representation and in turn more positive outgroup attitudes.
+Future research should test this possibility.
+The effects of extended contact were not, however, moderated by participants’ ethnic
+group. This result is in line with prior research on extended contact in adults (e.g. Turner,
+Hewstone, & Voci, 2007), showing that, in contrast to direct contact (Tropp & Pettigrew,
+2005), extended contact is equally effective for both majority and minority members. Our
+results represent strong evidence for the extended contact hypothesis applied to majority
+and minority children, and imply that strategies based on extended contact can be successfully
+used in educational contexts whether children belong to the majority or to the minority
+group.
+Our research extends previous literature in three major ways. First, it tests extended
+contact as a strategy for improving outgroup orientations in both majority and minority
+children, using various types of dependent variables. These dependent variables also
+include intergroup behavioural intentions, which have rarely been tested as the outcome
+of extended contact among children. Second, it sheds light on the process underlying
+improvement of outgroup attitudes, by identifying a new mediator of extended contact
+(i.e. intergroup empathy). Third, it examines the boundary conditions that limit the effects
+of extended contact, namely level of direct contact.
+Our findings have important practical implications for educational policies. Structured
+interventions based on extended contact, which can be directed simultaneously to majority
+and minority children, should strengthen the importance of understanding what outgroup
+members feel. Enhanced intergroup empathy is then the key factor allowing the achievement
+of more positive outgroup attitudes and the formation of new cross-group friendships.
+New cross-group friendships can increase confidence in contact and foster a
+virtuous circle where individuals seek out even more contact (Turner & Cameron,
+2016). These interventions should not be carried out in isolation, but they may fruitfully
+be combined with other interventions, such as those based on imagined contact (Crisp &
+Turner, 2012), and can represent a pre-contact tool to be used before children belonging
+to different groups have the opportunity to engage in direct, face-to-face contact.
+Notwithstanding these encouraging conclusions, we acknowledge some limitations.
+First, results are based on correlational data. Clearly, we now need experimental and longitudinal
+data to support the new findings of this study. This is especially true because we
+have included a variable (intergroup empathy) which had never been tested as a mediator
+of extended contact among children. Testing mediation in correlational designs may, in
+fact, be misleading (Cohen, Cohen, West, & Aiken, 2003) and mediator models would
+ideally require manipulation of both independent and mediator variables in order to make
+stronger causal claims (Spencer, Zanna, & Fong, 2005).
+Second, as data were collected in Northern Italy with respect to the relationship between
+Italian and immigrant children, we should be cautious about the generalizability of these
+results to other intergroup contexts. Future research should include settings where different
+minorities are present, where they are present in greater or lesser numbers, and where the
+receiving society is more or less tolerant than in Italy. Third, the two items we used to
+capture intergroup empathy may be too abstract for children. This may be reflected in
+the moderate correlation we found between the two items. Future studies should use more
+reliable and simpler measures of empathy, carefully pre-tested to ensure that they are
+understood by children of the target age group.
+To conclude, the present study provides further support for the extended contact hypothesis
+(Wright et al., 1997). Because interventions based on direct contact are often impractical
+because of factors such as segregation or low numbers of the minority, and can be
+costly, we believe that it is of primary importance to advance our understanding of alternative
+flexible and low-cost prejudice-reduction strategies such as extended contact.
+
+ACKNOWLEDGEMENTS
+We are grateful to the Institutes Frank, Giotto and Pertini (Carpi, Modena), and to Paola
+Spagnol and Margherita Righi for their collaboration in the organization of the study.
+We also thank Giulia Bergamini and Valentina Amari for their help in data collection
+and coding.
